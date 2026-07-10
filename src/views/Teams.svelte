@@ -7,12 +7,27 @@
   $: L = $lang;
 
   const clsColor = { singles: 'var(--cyan)', sun: 'var(--gold)', rain: 'var(--blue)' };
+
+  // Objeto por Pokémon (desde builds) + conocidos sin build. Solo el nombre ES corto.
+  const itemBySprite = {};
+  for (const b of data.builds) itemBySprite[b.sprite] = b.item;
+  const extra = { 10034: 'Charizardita X · Charizardite X', 1013: 'Baya Zonora · Kasib Berry', 324: 'Carbón · Charcoal', 10041: 'Gyaradosita · Gyaradosite' };
+  for (const [k, v] of Object.entries(extra)) if (!itemBySprite[k]) itemBySprite[k] = v;
+  const nameBySprite = {};
+  for (const b of data.builds) nameBySprite[b.sprite] = b.name + (b.form ? ' ' + b.form : '');
+  for (const m of data.roster) if (!nameBySprite[m.sprite]) nameBySprite[m.sprite] = m.name + (m.form ? ' ' + m.form : '');
+
+  const shortItem = (id) => {
+    const it = itemBySprite[id];
+    return it ? it.split('·')[0].trim() : '—';
+  };
+  const monName = (id) => nameBySprite[id] || '';
 </script>
 
 <SectionHead
   eyebrow={{ es: 'Equipos · usa tus espacios', en: 'Teams · use your slots' }}
   title={{ es: 'Composiciones recomendadas', en: 'Recommended compositions' }}
-  sub={{ es: 'La caja crece con tu rango: activa un equipo por espacio y guarda el resto como Réplica (código gratis).', en: 'Your box grows with rank: activate one team per slot and save the rest as Replica (free code).' }} />
+  sub={{ es: 'Cada Pokémon lleva su objeto (sin repetir en el equipo — Item Clause). La caja crece con tu rango: activa uno por espacio y guarda el resto como Réplica.', en: 'Each Pokémon shows its item (no repeats per team — Item Clause). Your box grows with rank: activate one per slot, save the rest as Replica.' }} />
 
 <div class="teams">
   {#each data.teams as t}
@@ -29,7 +44,11 @@
       </header>
       <div class="lineup">
         {#each t.mons as id}
-          <div class="lu"><Sprite id={id} size={56} alt="" bob /></div>
+          <div class="lu">
+            <Sprite id={id} size={54} alt={monName(id)} bob />
+            <span class="lu-name">{monName(id)}</span>
+            <span class="lu-item">{shortItem(id)}</span>
+          </div>
         {/each}
       </div>
       <p class="strat">{tt(t.strat, L)}</p>
@@ -49,8 +68,8 @@
         <span class="chip-tag">{tt(a.fmt, L)}</span>
       </div>
       <div class="alt-line">
-        {#each a.mons as id, i}
-          <div class="am"><Sprite id={id} size={40} alt="" /></div>
+        {#each a.mons as id}
+          <div class="am" title="{monName(id)} · {shortItem(id)}"><Sprite id={id} size={38} alt="" /></div>
         {/each}
       </div>
       {#if a.miss.length}
@@ -70,8 +89,10 @@
   .team-title h3 { font-size: 19px; }
   .team-meta { display: flex; gap: 6px; margin-top: 6px; }
   .diff { color: var(--tc); border-color: color-mix(in srgb, var(--tc) 40%, transparent); }
-  .lineup { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
-  .lu { background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; padding: 6px; }
+  .lineup { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 8px; margin-bottom: 14px; }
+  .lu { display: flex; flex-direction: column; align-items: center; gap: 2px; background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; padding: 8px 4px; }
+  .lu-name { font-size: 11px; font-weight: 700; text-align: center; line-height: 1.1; }
+  .lu-item { font-size: 10px; color: var(--gold); text-align: center; line-height: 1.15; }
   .strat { color: var(--muted); font-size: 14px; line-height: 1.55; margin: 0 0 12px; }
   .tags { display: flex; flex-wrap: wrap; gap: 6px; }
   .tag { font-size: 11.5px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line); color: var(--muted); }
@@ -85,6 +106,4 @@
   .am { background: var(--surface-2); border-radius: 8px; padding: 3px; }
   .miss { font-size: 12px; color: var(--red); font-weight: 600; }
   .ready { font-size: 12px; color: var(--green); font-weight: 600; }
-
-  @media (min-width: 720px) { .teams { grid-template-columns: 1fr; } }
 </style>

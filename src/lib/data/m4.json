@@ -503,14 +503,15 @@
       "form": "Mega",
       "dex": 303,
       "sprite": 10052,
-      "status": "situational",
+      "status": "keep",
       "tag": {
-        "es": "Anti-acero",
-        "en": "Anti-steel"
+        "es": "Núcleo · nuevo",
+        "en": "Core · new"
       },
-      "flag": {
-        "es": "Subir a núcleo: ahora es pieza básica del meta M-B (núcleo con Gholdengo).",
-        "en": "Promote to core: now a staple of M-B (safe core with Gholdengo)."
+      "isNew": true,
+      "reason": {
+        "es": "Pieza básica del meta M-B: Fuerza Colosal la vuelve un pico de daño. Núcleo seguro con Gholdengo.",
+        "en": "M-B staple: Huge Power makes it a damage spike. Safe core with Gholdengo."
       }
     },
     {
@@ -562,14 +563,15 @@
       "form": "Mega",
       "dex": 398,
       "sprite": 398,
-      "status": "situational",
+      "status": "keep",
       "tag": {
-        "es": "Viento Afín",
-        "en": "Tailwind"
+        "es": "Viable · nuevo",
+        "en": "Viable · new"
       },
-      "flag": {
-        "es": "Reevaluar: Mega Staraptor con Buscabroncas (Contrary) es pico ofensivo nuevo del meta.",
-        "en": "Reassess: Mega Staraptor with Contrary is a new offensive threat."
+      "isNew": true,
+      "reason": {
+        "es": "Mega con Buscabroncas: A Bocajarro sube defensas mientras pega. Pico ofensivo del meta.",
+        "en": "Mega with Contrary: Close Combat boosts defenses while attacking. Meta threat."
       }
     },
     {
@@ -673,6 +675,22 @@
       "tag": {
         "es": "Redundante",
         "en": "Redundant"
+      }
+    },
+    {
+      "name": "Scovillain",
+      "form": "Mega",
+      "dex": 952,
+      "sprite": 952,
+      "status": "situational",
+      "isNew": true,
+      "tag": {
+        "es": "TR / soporte · nuevo",
+        "en": "TR / support · new"
+      },
+      "reason": {
+        "es": "Redirige ataques con Danza Amiga y quema por contacto. Soporte de Trick Room.",
+        "en": "Redirects with Rage Powder and burns on contact. Trick Room support."
       }
     },
     {
@@ -964,6 +982,10 @@
       "es": "Dobles — Lluvia",
       "en": "Doubles — Rain"
     },
+    "trickroom": {
+      "es": "Dobles — Trick Room",
+      "en": "Doubles — Trick Room"
+    },
     "extra": {
       "es": "Piezas extra",
       "en": "Extra pieces"
@@ -974,666 +996,2145 @@
       "group": "singles",
       "name": "Garchomp",
       "sprite": 445,
+      "own": true,
       "item": "Vidasfera · Life Orb",
       "ability": "Piel Tosca · Rough Skin",
       "nature": "Alegre · Jolly",
-      "spread": "Atk 32 / Vel 32 / PS 2",
+      "spread": "Ataque 32 / Velocidad 32 / PS 2",
       "moves": [
         "Terremoto · Earthquake",
         "Garra Dragón · Dragon Claw",
         "Roca Afilada · Stone Edge",
         "Danza Espada · Swords Dance"
       ],
+      "role": {
+        "es": "Barredor y cierre físico. No gasta hueco de Mega.",
+        "en": "Physical sweeper and closer. Doesn't use a Mega slot."
+      },
+      "strategy": {
+        "es": [
+          "Entra contra algo que no pueda amenazarte y usa Danza Espada.",
+          "Con +2, Terremoto o Garra Dragón revientan a casi todo neutro.",
+          "Guarda Roca Afilada para los Voladores/Fuego que quieren frenarte."
+        ],
+        "en": [
+          "Come in on something that can't threaten you and Swords Dance.",
+          "At +2, Earthquake or Dragon Claw break almost any neutral target.",
+          "Save Stone Edge for the Flyers/Fires that try to check you."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Velocidad base alta + un solo turno de setup lo vuelve letal.",
+          "Piel Tosca castiga el contacto y ayuda contra Bandas Focus."
+        ],
+        "en": [
+          "High base Speed + one setup turn makes it lethal.",
+          "Rough Skin punishes contact and chips through Focus Sashes."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Sin setup, muros como Corviknight lo aguantan.",
+          "Vidasfera + retroceso lo desgastan rápido."
+        ],
+        "en": [
+          "Without setup, walls like Corviknight take it.",
+          "Life Orb + recoil wear it down fast."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Corviknight",
+          "ok": false,
+          "t": {
+            "es": "Te para y usa Despejar: no pierdas turnos, cámbialo.",
+            "en": "Walls you and Defogs: don't waste turns, pivot out."
+          }
+        },
+        {
+          "n": "Kingambit",
+          "ok": true,
+          "t": {
+            "es": "Terremoto lo rompe si no lleva Banda Focus.",
+            "en": "Earthquake breaks it unless it holds a Sash."
+          }
+        },
+        {
+          "n": "Dragonite",
+          "ok": false,
+          "t": {
+            "es": "Su Multiescamas aguanta un golpe; cuidado con su prioridad.",
+            "en": "Multiscale tanks a hit; watch its priority."
+          }
+        }
+      ],
       "note": {
         "es": "En Singles, Danza Espada lo hace romper equipos. En Dobles cambia Danza por Protección.",
         "en": "In Singles, Swords Dance lets it break teams. In Doubles swap Dance for Protect."
-      },
-      "tips": [
-        {
-          "es": "Lidera con Danza Espada solo si el rival no tiene prioridad ni Hada rápida; si la hay, ataca directo.",
-          "en": "Lead Swords Dance only if the foe lacks priority or a fast Fairy; otherwise attack straight away."
-        },
-        {
-          "es": "Roca Afilada pega a los Charizard/Volcarona/Talonflame que intentan hacerte setup encima.",
-          "en": "Stone Edge nails Charizard/Volcarona/Talonflame trying to set up on you."
-        },
-        {
-          "es": "Con Vidasfera te recuperas de sobra por Piel Tosca al recibir contacto; cuidado con residuales.",
-          "en": "Life Orb + Rough Skin chip stacks fast on contact; watch your own recoil."
-        }
-      ]
+      }
     },
     {
       "group": "singles",
       "name": "Metagross",
       "sprite": 10076,
+      "own": true,
       "item": "Metagrossita · Metagrossite",
       "ability": "Cuerpo Puro→Zarpas Duras · Clear Body→Tough Claws",
       "nature": "Alegre · Jolly",
-      "spread": "Atk 32 / Vel 32 / PS 2",
+      "spread": "Ataque 32 / Velocidad 32 / PS 2",
       "moves": [
         "Puño Meteoro · Meteor Mash",
         "Colmillo Psíquico · Psychic Fangs",
         "Puño Bala · Bullet Punch",
         "Puño Hielo · Ice Punch"
       ],
+      "role": {
+        "es": "Rompedor físico con prioridad y buena defensa.",
+        "en": "Physical breaker with priority and good bulk."
+      },
+      "strategy": {
+        "es": [
+          "No megaevoluciones si esperas Intimidación: Cuerpo Puro te protege antes.",
+          "Zarpas Duras potencia todos tus contactos: pega durísimo de entrada.",
+          "Puño Bala remata rápidos debilitados y Hadas."
+        ],
+        "en": [
+          "Don't mega if you expect Intimidate: Clear Body shields you first.",
+          "Tough Claws boosts all contact moves: hits hard immediately.",
+          "Bullet Punch finishes weakened fast threats and Fairies."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Prioridad + defensa lo hacen difícil de tumbar.",
+          "Colmillo Psíquico ignora pantallas."
+        ],
+        "en": [
+          "Priority + bulk make it hard to KO.",
+          "Psychic Fangs ignores screens."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Débil a Tierra y Fuego: cuidado con Garchomp e Incineroar.",
+          "Sin Velocidad base alta depende del matchup."
+        ],
+        "en": [
+          "Weak to Ground and Fire: careful with Garchomp and Incineroar.",
+          "Without high base Speed it's matchup-reliant."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Grimmsnarl",
+          "ok": true,
+          "t": {
+            "es": "Colmillo Psíquico atraviesa sus pantallas.",
+            "en": "Psychic Fangs breaks through its screens."
+          }
+        },
+        {
+          "n": "Garchomp",
+          "ok": false,
+          "t": {
+            "es": "Le pierdes a su Terremoto; entra tras que gaste el Danza Espada.",
+            "en": "Loses to its Earthquake; come in after it uses Swords Dance."
+          }
+        },
+        {
+          "n": "Sylveon",
+          "ok": true,
+          "t": {
+            "es": "Puño Bala + Cabeza de acero castigan a las Hadas.",
+            "en": "Bullet Punch + Steel hits punish Fairies."
+          }
+        }
+      ],
       "note": {
         "es": "Cuerpo Puro ignora Intimidación. Puño Bala es prioridad que revienta Hadas.",
         "en": "Clear Body ignores Intimidate. Bullet Punch is priority that smashes Fairies."
-      },
-      "tips": [
-        {
-          "es": "No megaevoluciones el turno 1 si esperas Intimidación: Cuerpo Puro te protege antes de la Mega.",
-          "en": "Don't mega turn 1 vs Intimidate: Clear Body shields you before mega-evolving."
-        },
-        {
-          "es": "Puño Bala revienta a Hadas y a Mimikyu tras romperle el Disfraz; es tu prioridad clave.",
-          "en": "Bullet Punch smashes Fairies and Mimikyu after breaking Disguise; your key priority."
-        },
-        {
-          "es": "Colmillo Psíquico ignora pantallas: úsalo contra equipos de Grimmsnarl/Sableye.",
-          "en": "Psychic Fangs ignores screens: use it against Grimmsnarl/Sableye teams."
-        }
-      ]
+      }
     },
     {
       "group": "singles",
       "name": "Meowscarada",
       "sprite": 908,
+      "own": true,
       "item": "Pañuelo Elección · Choice Scarf",
       "ability": "Mutatipo · Protean",
       "nature": "Alegre · Jolly",
-      "spread": "Atk 32 / Vel 32 / PS 2",
+      "spread": "Ataque 32 / Velocidad 32 / PS 2",
       "moves": [
         "Truco Floral · Flower Trick",
         "Desarme · Knock Off",
         "Ida y Vuelta · U-turn",
         "Triple Axel · Triple Axel"
       ],
+      "role": {
+        "es": "Revienta-rápidos y pivote ofensivo.",
+        "en": "Fast revenge-killer and offensive pivot."
+      },
+      "strategy": {
+        "es": [
+          "Con Pañuelo superas a casi todo: entra a rematar amenazas debilitadas.",
+          "Truco Floral siempre es crítico e ignora pantallas y subidas de Defensa.",
+          "Ida y Vuelta mantiene el momentum si el matchup no te favorece."
+        ],
+        "en": [
+          "With Scarf you outspeed almost everything: revenge weakened threats.",
+          "Flower Trick always crits and ignores screens and Defense boosts.",
+          "U-turn keeps momentum if the matchup isn't in your favor."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Truco Floral crítico garantizado es daño enorme y fiable.",
+          "Desarme quita objetos clave antes de rematar."
+        ],
+        "en": [
+          "Guaranteed-crit Flower Trick is huge, reliable damage.",
+          "Knock Off removes key items before finishing."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Muy frágil: cualquier prioridad lo tumba.",
+          "El Pañuelo te encierra en un movimiento: cuidado al elegir."
+        ],
+        "en": [
+          "Very frail: any priority KOs it.",
+          "The Scarf locks you into one move: choose carefully."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Kingambit",
+          "ok": false,
+          "t": {
+            "es": "Golpe Bajo prioritario te mata: no ataques directo, pivotea.",
+            "en": "Priority Sucker Punch kills you: don't attack into it, pivot."
+          }
+        },
+        {
+          "n": "Hippowdon",
+          "ok": true,
+          "t": {
+            "es": "Truco Floral crítico + Desarme lo desgastan.",
+            "en": "Crit Flower Trick + Knock Off wear it down."
+          }
+        }
+      ],
       "note": {
         "es": "Truco Floral siempre es crítico. Con Pañuelo es tu revienta-rápidos.",
         "en": "Flower Trick is always a crit. With Scarf it's your fast-check."
-      },
-      "tips": [
-        {
-          "es": "Con Pañuelo eres revienta-rápidos: entra a limpiar tras un pivote de Ida y Vuelta.",
-          "en": "With Scarf you're a fast-cleaner: come in after a U-turn pivot to revenge."
-        },
-        {
-          "es": "Truco Floral siempre es crítico e ignora pantallas y subidas de Defensa.",
-          "en": "Flower Trick is always a crit and ignores screens and Defense boosts."
-        },
-        {
-          "es": "Desarme quita objetos clave (Restos, Bayas, Vidasfera) antes de rematar.",
-          "en": "Knock Off removes key items (Leftovers, Berries, Life Orb) before finishing."
-        }
-      ]
+      }
     },
     {
       "group": "singles",
       "name": "Hippowdon",
       "sprite": 450,
+      "own": true,
       "item": "Restos · Leftovers",
       "ability": "Chorro Arena · Sand Stream",
       "nature": "Agitada · Impish",
-      "spread": "PS 32 / Def 32 / Vel 2",
+      "spread": "PS 32 / Defensa 32 / Velocidad 2",
       "moves": [
         "Terremoto · Earthquake",
         "Relajo · Slack Off",
         "Trampa Rocas · Stealth Rock",
         "Bostezo · Yawn"
       ],
+      "role": {
+        "es": "Muro físico que pone rocas y controla el ritmo.",
+        "en": "Physical wall that sets rocks and controls tempo."
+      },
+      "strategy": {
+        "es": [
+          "Pon Trampa Rocas turno 1 contra equipos ofensivos.",
+          "Bostezo fuerza cambios y te da turnos gratis para curarte con Relajo.",
+          "La arena desgasta Bandas Focus y a Charizard/Pelipper."
+        ],
+        "en": [
+          "Set Stealth Rock turn 1 against offensive teams.",
+          "Yawn forces switches and gives you free turns to Slack Off.",
+          "Sand chips Focus Sashes and Charizard/Pelipper."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Casi imposible de tumbar sin súper-efectivo.",
+          "Trampa Rocas + Bostezo controlan toda la partida."
+        ],
+        "en": [
+          "Nearly impossible to break without super-effective hits.",
+          "Stealth Rock + Yawn control the whole game."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Débil a Agua y Planta.",
+          "Sin recuperación instantánea si te presionan con especiales."
+        ],
+        "en": [
+          "Weak to Water and Grass.",
+          "No instant recovery under special pressure."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Garchomp",
+          "ok": true,
+          "t": {
+            "es": "Aguantas su Terremoto y le pones Bostezo.",
+            "en": "Tank its Earthquake and Yawn it out."
+          }
+        },
+        {
+          "n": "Rotom-Wash",
+          "ok": false,
+          "t": {
+            "es": "Su Hidrobomba te revienta: no te quedes.",
+            "en": "Its Hydro Pump breaks you: don't stay in."
+          }
+        }
+      ],
       "note": {
         "es": "Muro físico que pone rocas y forza cambios con Bostezo.",
         "en": "Physical wall that sets rocks and forces switches with Yawn."
-      },
-      "tips": [
-        {
-          "es": "Pon Trampa Rocas turno 1 contra ofensivos; Bostezo fuerza cambios y compra tempo.",
-          "en": "Set Stealth Rock turn 1 vs offense; Yawn forces switches and buys tempo."
-        },
-        {
-          "es": "La arena de Chorro Arena rompe Bandas Focus y desgasta a Charizard/Pelipper.",
-          "en": "Sand Stream breaks Focus Sashes and chips Charizard/Pelipper."
-        },
-        {
-          "es": "Relajo + Restos te vuelve un muro casi imposible de tumbar sin súper-efectivo.",
-          "en": "Slack Off + Leftovers make you a wall that's hard to break without super-effective hits."
-        }
-      ]
+      }
     },
     {
       "group": "singles",
       "name": "Corviknight",
       "sprite": 823,
-      "item": "Restos · Leftovers",
+      "own": true,
+      "item": "Casco Dentado · Rocky Helmet",
       "ability": "Coraza Reflejo · Mirror Armor",
       "nature": "Agitada · Impish",
-      "spread": "PS 32 / Def 32 / Vel 2",
+      "spread": "PS 32 / Defensa 32 / Velocidad 2",
       "moves": [
         "Pájaro Osado · Brave Bird",
         "Ida y Vuelta · U-turn",
         "Respiro · Roost",
         "Despejar · Defog"
       ],
-      "note": {
-        "es": "Coraza Reflejo devuelve las bajadas de stats. Pivote defensivo clave.",
-        "en": "Mirror Armor bounces stat drops. Key defensive pivot."
+      "role": {
+        "es": "Pivote defensivo volador que limpia hazards.",
+        "en": "Defensive Flying pivot that clears hazards."
       },
-      "tips": [
+      "strategy": {
+        "es": [
+          "Coraza Reflejo devuelve Intimidación y bajadas de stats: entra contra Incineroar.",
+          "Casco Dentado castiga a los físicos de contacto que te golpean.",
+          "Despejar quita tus hazards; Respiro te mantiene sano."
+        ],
+        "en": [
+          "Mirror Armor bounces Intimidate and stat drops: switch into Incineroar.",
+          "Rocky Helmet punishes contact attackers that hit you.",
+          "Defog clears your hazards; Roost keeps you healthy."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Coraza Reflejo neutraliza a los que dependen de bajarte stats.",
+          "Casco Dentado + Respiro lo hacen un muro que devuelve daño."
+        ],
+        "en": [
+          "Mirror Armor shuts down stat-drop users.",
+          "Rocky Helmet + Roost make it a chip-back wall."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Débil a Eléctrico y Fuego.",
+          "Ofensiva baja: puede volverse pasivo."
+        ],
+        "en": [
+          "Weak to Electric and Fire.",
+          "Low offense: can get passive."
+        ]
+      },
+      "vs": [
         {
-          "es": "Coraza Reflejo devuelve Intimidación y Alarido: úsala para castigar a Incineroar.",
-          "en": "Mirror Armor bounces Intimidate and Snarl: punish Incineroar with it."
+          "n": "Meowscarada",
+          "ok": true,
+          "t": {
+            "es": "Aguantas y el Casco + Piel castigan sus contactos.",
+            "en": "Tank it; Rocky Helmet punishes its contact moves."
+          }
         },
         {
-          "es": "Despejar limpia hazards; Ida y Vuelta mantiene el momentum defensivo.",
-          "en": "Defog clears hazards; U-turn keeps defensive momentum."
-        },
-        {
-          "es": "Respiro te recupera fuera del alcance de la mayoría de físicos neutrales.",
-          "en": "Roost keeps you out of range of most neutral physical attackers."
+          "n": "Rotom-Wash",
+          "ok": false,
+          "t": {
+            "es": "No lo tocas y te quema con Fuego Fatuo: pivotea.",
+            "en": "You can't hurt it and it burns you: pivot out."
+          }
         }
-      ]
+      ],
+      "note": {
+        "es": "Coraza Reflejo devuelve las bajadas de stats. Casco Dentado castiga el contacto.",
+        "en": "Mirror Armor bounces stat drops. Rocky Helmet punishes contact."
+      }
     },
     {
       "group": "singles",
       "name": "Rotom-Wash",
       "sprite": 10009,
-      "item": "Restos · Leftovers",
+      "own": true,
+      "item": "Gafas Protectoras · Safety Goggles",
       "ability": "Levitación · Levitate",
       "nature": "Modesta · Modest",
-      "spread": "PS 32 / AtEsp 32 / Def 2",
+      "spread": "PS 32 / At. Esp. 32 / Defensa 2",
       "moves": [
         "Hidrobomba · Hydro Pump",
         "Voltiocambio · Volt Switch",
         "Fuego Fatuo · Will-O-Wisp",
         "Protección · Protect"
       ],
-      "note": {
-        "es": "Inmune a Tierra por Levitación. Quema físicos y pivotea.",
-        "en": "Ground-immune via Levitate. Burns physical attackers and pivots."
+      "role": {
+        "es": "Pivote agua-eléctrico que quema físicos.",
+        "en": "Water-Electric pivot that burns physicals."
       },
-      "tips": [
+      "strategy": {
+        "es": [
+          "Fuego Fatuo neutraliza físicos como Garchomp y Kingambit desde el cambio.",
+          "Levitación te da inmunidad a Tierra: entra gratis contra equipos de Tierra.",
+          "Voltiocambio trae a tu remate con ventaja; Gafas Protectoras te salvan de Danza Amiga y polvos."
+        ],
+        "en": [
+          "Will-O-Wisp neutralizes physicals like Garchomp and Kingambit on the switch.",
+          "Levitate grants Ground immunity: switch in free vs Ground teams.",
+          "Volt Switch brings your sweeper in; Safety Goggles dodge Rage Powder and powders."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Inmune a Tierra y quema a los físicos meta.",
+          "Voltiocambio mantiene el momentum sin gastar objeto ofensivo."
+        ],
+        "en": [
+          "Ground-immune and burns the meta's physicals.",
+          "Volt Switch keeps momentum without an offensive item."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Débil a Planta y Fantasma.",
+          "Daño limitado si no consigue quemas."
+        ],
+        "en": [
+          "Weak to Grass and Ghost.",
+          "Limited damage if it can't land burns."
+        ]
+      },
+      "vs": [
         {
-          "es": "Fuego Fatuo neutraliza físicos como Garchomp y Kingambit desde el cambio.",
-          "en": "Will-O-Wisp neutralizes physicals like Garchomp and Kingambit on the switch."
+          "n": "Garchomp",
+          "ok": true,
+          "t": {
+            "es": "Inmune a Terremoto; Fuego Fatuo lo inutiliza.",
+            "en": "Immune to Earthquake; Will-O-Wisp cripples it."
+          }
         },
         {
-          "es": "Levitación te hace inmune a Terremoto: entra gratis contra equipos de Tierra.",
-          "en": "Levitate grants Ground immunity: switch in free vs Ground teams."
-        },
-        {
-          "es": "Voltiocambio mantiene el momentum y trae a tu remate con ventaja.",
-          "en": "Volt Switch keeps momentum and brings your sweeper in with advantage."
+          "n": "Sinistcha",
+          "ok": false,
+          "t": {
+            "es": "Te para y no le quemas efectivo: cámbialo.",
+            "en": "Walls you and shrugs burns: pivot out."
+          }
         }
-      ]
+      ],
+      "note": {
+        "es": "Inmune a Tierra por Levitación. Gafas Protectoras evitan Danza Amiga en Dobles.",
+        "en": "Ground-immune via Levitate. Safety Goggles dodge Rage Powder in Doubles."
+      }
     },
     {
       "group": "sun",
       "name": "Charizard",
       "form": "Mega Y",
       "sprite": 10035,
+      "own": true,
       "item": "Charizardita Y · Charizardite Y",
       "ability": "Sequía · Drought",
       "nature": "Miedosa · Timid",
-      "spread": "AtEsp 32 / Vel 32 / PS 2",
+      "spread": "At. Esp. 32 / Velocidad 32 / PS 2",
       "moves": [
         "Onda Ígnea · Heat Wave",
         "Rayo Solar · Solar Beam",
         "Tajo Aéreo · Air Slash",
         "Protección · Protect"
       ],
+      "role": {
+        "es": "Invocador de sol y nuker especial en área.",
+        "en": "Sun setter and spread special nuker."
+      },
+      "strategy": {
+        "es": [
+          "Megaevoluciona turno 1 para poner el sol de Sequía de inmediato.",
+          "Onda Ígnea pega a los dos rivales potenciada por el sol.",
+          "Bajo sol, Rayo Solar es instantáneo y revienta Aguas/Roca."
+        ],
+        "en": [
+          "Mega-evolve turn 1 to set Drought sun immediately.",
+          "Heat Wave hits both foes boosted by sun.",
+          "Under sun, Solar Beam is instant and blasts Waters/Rocks."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Presión en área inmediata con sol.",
+          "Miedosa + máx Velocidad supera a la mayoría de base 100."
+        ],
+        "en": [
+          "Immediate spread pressure with sun.",
+          "Timid + max Speed outspeeds most base 100s."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Doble debilidad a Roca: Avalancha lo tumba.",
+          "Depende de que el sol siga activo."
+        ],
+        "en": [
+          "Double weak to Rock: Rock Slide KOs it.",
+          "Relies on sun staying up."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Garchomp",
+          "ok": false,
+          "t": {
+            "es": "Su Avalancha te mata: no entres si puede atacar.",
+            "en": "Its Rock Slide kills you: don't stay in range."
+          }
+        },
+        {
+          "n": "Kingambit",
+          "ok": true,
+          "t": {
+            "es": "Onda Ígnea bajo sol lo derrite.",
+            "en": "Heat Wave under sun melts it."
+          }
+        }
+      ],
       "note": {
         "es": "Pone el sol y pega en área con Onda Ígnea. Rayo Solar instantáneo bajo sol.",
         "en": "Sets sun and hits spread with Heat Wave. Solar Beam is instant under sun."
-      },
-      "tips": [
-        {
-          "es": "El sol de Sequía potencia tus fuegos y hace instantáneo el Rayo Solar del aliado.",
-          "en": "Drought sun boosts your Fire moves and makes an ally's Solar Beam instant."
-        },
-        {
-          "es": "Onda Ígnea pega a los dos rivales; combínalo con Protección del compañero.",
-          "en": "Heat Wave hits both foes; pair with the partner's Protect."
-        },
-        {
-          "es": "Miedosa + máx Velocidad te deja por encima de la base 100; cuidado con Roca.",
-          "en": "Timid + max Speed outspeeds base 100s; beware Rock coverage."
-        }
-      ]
+      }
     },
     {
       "group": "sun",
       "name": "Venusaur",
       "form": "Mega",
       "sprite": 10033,
+      "own": true,
       "item": "Banda Focus · Focus Sash",
       "ability": "Clorofila · Chlorophyll",
       "nature": "Modesta · Modest",
-      "spread": "AtEsp 32 / Vel 32 / PS 2",
+      "spread": "At. Esp. 32 / Velocidad 32 / PS 2",
       "moves": [
         "Somnífero · Sleep Powder",
         "Bomba Lodo · Sludge Bomb",
         "Energibola · Energy Ball",
         "Protección · Protect"
       ],
+      "role": {
+        "es": "Segundo abridor de sol con sueño y techo especial.",
+        "en": "Second sun abuser with sleep and special ceiling."
+      },
+      "strategy": {
+        "es": [
+          "Bajo sol, Clorofila dobla tu Velocidad: superas a casi todo el formato.",
+          "Somnífero desactiva una amenaza turno 1 mientras Charizard presiona.",
+          "Bomba Lodo castiga a las Hadas; Energibola a las Aguas."
+        ],
+        "en": [
+          "Under sun, Chlorophyll doubles Speed: you outrun almost the whole format.",
+          "Sleep Powder disables a threat turn 1 while Charizard pressures.",
+          "Sludge Bomb punishes Fairies; Energy Ball hits Waters."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Somnífero desactiva amenazas gratis.",
+          "Banda Focus garantiza el turno de sueño."
+        ],
+        "en": [
+          "Sleep Powder disables threats for free.",
+          "Focus Sash guarantees the sleep turn."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Sin sol pierde su Velocidad.",
+          "Débil a Fuego, Hielo, Vuelo y Psíquico."
+        ],
+        "en": [
+          "Loses its Speed without sun.",
+          "Weak to Fire, Ice, Flying and Psychic."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Incineroar",
+          "ok": false,
+          "t": {
+            "es": "Intimidación y Fuego lo frenan; apunta al compañero.",
+            "en": "Intimidate and Fire check it; target its partner."
+          }
+        },
+        {
+          "n": "Basculegion",
+          "ok": true,
+          "t": {
+            "es": "Energibola bajo sol lo revienta.",
+            "en": "Energy Ball under sun blasts it."
+          }
+        }
+      ],
       "note": {
         "es": "Bajo sol dobla velocidad con Clorofila. Somnífero desactiva amenazas.",
         "en": "Doubles Speed under sun via Chlorophyll. Sleep Powder disables threats."
-      },
-      "tips": [
-        {
-          "es": "Bajo sol, Clorofila dobla tu Velocidad y superas a casi todo el formato.",
-          "en": "Under sun, Chlorophyll doubles Speed and you outrun almost everything."
-        },
-        {
-          "es": "Somnífero desactiva una amenaza clave turno 1 mientras Charizard pone presión.",
-          "en": "Sleep Powder disables a key threat turn 1 while Charizard applies pressure."
-        },
-        {
-          "es": "Banda Focus te garantiza el turno de sueño aunque te centren.",
-          "en": "Focus Sash guarantees your sleep turn even if you get focused."
-        }
-      ]
+      }
     },
     {
       "group": "sun",
       "name": "Incineroar",
       "sprite": 727,
+      "own": true,
       "item": "Baya Zidra · Sitrus Berry",
       "ability": "Intimidación · Intimidate",
       "nature": "Cauta · Careful",
-      "spread": "PS 32 / DefEsp 32 / Def 2",
+      "spread": "PS 32 / Def. Esp. 32 / Defensa 2",
       "moves": [
         "Sorpresa · Fake Out",
         "Última Palabra · Parting Shot",
         "Envite Ígneo · Flare Blitz",
         "Fuego Fatuo · Will-O-Wisp"
       ],
+      "role": {
+        "es": "El mejor soporte del formato: control de ritmo.",
+        "en": "Best support in the format: tempo control."
+      },
+      "strategy": {
+        "es": [
+          "Sorpresa turno 1 corta el momentum del rival o bloquea un remate.",
+          "Última Palabra baja el ataque del rival y te saca a algo con ventaja.",
+          "Guarda Envite Ígneo para no encender la Baya Zidra antes de tiempo."
+        ],
+        "en": [
+          "Fake Out turn 1 cuts the foe's momentum or blocks a sweep.",
+          "Parting Shot lowers the foe's attack and pivots you favorably.",
+          "Save Flare Blitz so you don't trigger Sitrus too early."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Intimidación + Sorpresa controlan cada turno.",
+          "Última Palabra da pivoteo negativo único."
+        ],
+        "en": [
+          "Intimidate + Fake Out control every turn.",
+          "Parting Shot gives unique negative pivoting."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Ofensiva baja sin objeto ofensivo.",
+          "Débil a Agua, Tierra, Roca y Lucha."
+        ],
+        "en": [
+          "Low offense without an offensive item.",
+          "Weak to Water, Ground, Rock and Fighting."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Garchomp",
+          "ok": false,
+          "t": {
+            "es": "Su Terremoto te presiona: baja su ataque y pivotea.",
+            "en": "Its Earthquake pressures you: lower its Attack and pivot."
+          }
+        },
+        {
+          "n": "Metagross",
+          "ok": true,
+          "t": {
+            "es": "Fuego Fatuo e Intimidación lo neutralizan.",
+            "en": "Will-O-Wisp and Intimidate neutralize it."
+          }
+        }
+      ],
       "note": {
         "es": "Intimidación + Última Palabra controlan el ritmo. El mejor soporte del formato.",
         "en": "Intimidate + Parting Shot control tempo. Best support in the format."
-      },
-      "tips": [
-        {
-          "es": "Sorpresa turno 1 corta el momentum y bloquea un remate o un setup.",
-          "en": "Fake Out turn 1 cuts momentum and blocks a sweep or setup."
-        },
-        {
-          "es": "Última Palabra baja el ataque del rival y te saca a algo con ventaja.",
-          "en": "Parting Shot lowers the foe's attack and pivots you to a favorable matchup."
-        },
-        {
-          "es": "Guarda Envite Ígneo para no encender la Baya Zidra antes de tiempo.",
-          "en": "Hold Flare Blitz so you don't trigger Sitrus Berry too early."
-        }
-      ]
+      }
     },
     {
       "group": "sun",
       "name": "Garchomp",
       "sprite": 445,
+      "own": true,
       "item": "Vidasfera · Life Orb",
       "ability": "Piel Tosca · Rough Skin",
       "nature": "Alegre · Jolly",
-      "spread": "Atk 32 / Vel 32 / PS 2",
+      "spread": "Ataque 32 / Velocidad 32 / PS 2",
       "moves": [
         "Terremoto · Earthquake",
         "Avalancha · Rock Slide",
         "Garra Dragón · Dragon Claw",
         "Protección · Protect"
       ],
+      "role": {
+        "es": "Barredor físico en Dobles con daño en área.",
+        "en": "Physical sweeper in Doubles with spread damage."
+      },
+      "strategy": {
+        "es": [
+          "Terremoto pega a los dos rivales: coordínalo con Protección del aliado.",
+          "Avalancha tiene 30% de amedrentar y castiga Voladores.",
+          "Protección te salva de dobles objetivos mientras el aliado limpia."
+        ],
+        "en": [
+          "Earthquake hits both foes: pair it with an ally's Protect.",
+          "Rock Slide has a 30% flinch and punishes Flyers.",
+          "Protect saves you from double-targeting while your ally cleans."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Terremoto en área es presión constante.",
+          "Rápido y potente sin gastar hueco de Mega."
+        ],
+        "en": [
+          "Spread Earthquake is constant pressure.",
+          "Fast and strong without using a Mega slot."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Terremoto también daña a tu aliado si no protege.",
+          "Vidasfera lo desgasta."
+        ],
+        "en": [
+          "Earthquake also hits your ally if it doesn't Protect.",
+          "Life Orb wears it down."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Charizard-Y",
+          "ok": true,
+          "t": {
+            "es": "Avalancha castiga a los Charizard rivales.",
+            "en": "Rock Slide punishes enemy Charizards."
+          }
+        },
+        {
+          "n": "Pelipper",
+          "ok": false,
+          "t": {
+            "es": "Sus Aguas bajo lluvia te presionan.",
+            "en": "Its Water moves under rain pressure you."
+          }
+        }
+      ],
       "note": {
         "es": "En Dobles usa Avalancha y Protección. Terremoto pega a los dos rivales.",
         "en": "In Doubles uses Rock Slide and Protect. Earthquake hits both opponents."
-      },
-      "tips": [
-        {
-          "es": "Lidera con Danza Espada solo si el rival no tiene prioridad ni Hada rápida; si la hay, ataca directo.",
-          "en": "Lead Swords Dance only if the foe lacks priority or a fast Fairy; otherwise attack straight away."
-        },
-        {
-          "es": "Roca Afilada pega a los Charizard/Volcarona/Talonflame que intentan hacerte setup encima.",
-          "en": "Stone Edge nails Charizard/Volcarona/Talonflame trying to set up on you."
-        },
-        {
-          "es": "Con Vidasfera te recuperas de sobra por Piel Tosca al recibir contacto; cuidado con residuales.",
-          "en": "Life Orb + Rough Skin chip stacks fast on contact; watch your own recoil."
-        }
-      ]
+      }
     },
     {
       "group": "sun",
       "name": "Sylveon",
       "sprite": 700,
+      "own": true,
       "item": "Pluma Hada · Fairy Feather",
       "ability": "Piel Feérica · Pixilate",
       "nature": "Modesta · Modest",
-      "spread": "PS 32 / AtEsp 32 / DefEsp 2",
+      "spread": "PS 32 / At. Esp. 32 / Def. Esp. 2",
       "moves": [
         "Vozarrón · Hyper Voice",
         "Fuerza Lunar · Moonblast",
         "Ataque Rápido · Quick Attack",
         "Protección · Protect"
       ],
-      "note": {
-        "es": "Vozarrón pega en área con bonus Hada por Piel Feérica. Da techo especial.",
-        "en": "Hyper Voice hits spread with Fairy boost via Pixilate. Special ceiling."
+      "role": {
+        "es": "Nuker especial en área y control anti-Dragón.",
+        "en": "Spread special nuker and anti-Dragon control."
       },
-      "tips": [
+      "strategy": {
+        "es": [
+          "Vozarrón pega a los dos rivales con bonus Hada por Piel Feérica.",
+          "Es tu respuesta a Dragones y a Basculegion: entra sin miedo.",
+          "Ataque Rápido remata débiles y rompe Bandas Focus."
+        ],
+        "en": [
+          "Hyper Voice hits both foes with a Fairy boost via Pixilate.",
+          "Your answer to Dragons and Basculegion: switch in freely.",
+          "Quick Attack finishes weak targets and breaks Focus Sashes."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Daño en área que ignora Sustituto.",
+          "Control total contra Dragones del meta."
+        ],
+        "en": [
+          "Spread damage that ignores Substitute.",
+          "Total control over the meta's Dragons."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Débil a Acero y Veneno.",
+          "Lento: necesita el apoyo del equipo."
+        ],
+        "en": [
+          "Weak to Steel and Poison.",
+          "Slow: needs team support."
+        ]
+      },
+      "vs": [
         {
-          "es": "Vozarrón pega en área con bonus de Piel Feérica e ignora Sustituto.",
-          "en": "Hyper Voice hits spread with Pixilate boost and ignores Substitute."
+          "n": "Garchomp",
+          "ok": true,
+          "t": {
+            "es": "Fuerza Lunar lo revienta.",
+            "en": "Moonblast blasts it."
+          }
         },
         {
-          "es": "Es tu respuesta a Dragones (Garchomp, Dragonite) y a Basculegion.",
-          "en": "Your answer to Dragons (Garchomp, Dragonite) and Basculegion."
-        },
-        {
-          "es": "Ataque Rápido remata rivales debilitados y rompe Bandas Focus.",
-          "en": "Quick Attack finishes weakened foes and breaks Focus Sashes."
+          "n": "Metagross",
+          "ok": false,
+          "t": {
+            "es": "Puño Bala te mata; apunta a su aliado.",
+            "en": "Bullet Punch KOs you; target its partner."
+          }
         }
-      ]
+      ],
+      "note": {
+        "es": "Vozarrón pega en área con bonus de Piel Feérica e ignora Sustituto.",
+        "en": "Hyper Voice hits spread with Pixilate boost and ignores Substitute."
+      }
     },
     {
       "group": "rain",
       "name": "Pelipper",
       "sprite": 279,
+      "own": true,
       "item": "Piedra Lluvia · Damp Rock",
       "ability": "Llovizna · Drizzle",
       "nature": "Modesta · Modest",
-      "spread": "PS 32 / AtEsp 32 / Def 2",
+      "spread": "PS 32 / At. Esp. 32 / Defensa 2",
       "moves": [
         "Vendaval · Hurricane",
         "Bola Clima · Weather Ball",
         "Viento Afín · Tailwind",
         "Protección · Protect"
       ],
+      "role": {
+        "es": "Invocador de lluvia y control de velocidad.",
+        "en": "Rain setter and speed control."
+      },
+      "strategy": {
+        "es": [
+          "Megaevoluciona/entra turno 1: la Piedra Lluvia alarga la lluvia a 8 turnos.",
+          "Viento Afín da control de velocidad a TODO el equipo, no solo a Nado Rápido.",
+          "Bajo lluvia, Vendaval nunca falla y Bola Clima se vuelve Agua."
+        ],
+        "en": [
+          "Enter turn 1: Damp Rock extends rain to 8 turns.",
+          "Tailwind gives speed control to the WHOLE team, not just Swift Swimmers.",
+          "Under rain, Hurricane never misses and Weather Ball becomes Water."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Pone la lluvia que habilita a todo el equipo.",
+          "Viento Afín dobla la velocidad del equipo 4 turnos."
+        ],
+        "en": [
+          "Sets the rain that enables the whole team.",
+          "Tailwind doubles team Speed for 4 turns."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Frágil: muere a cualquier Eléctrico o Roca.",
+          "Si pierde la lluvia el equipo se cae."
+        ],
+        "en": [
+          "Frail: dies to any Electric or Rock.",
+          "If rain is lost, the team collapses."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Archaludon",
+          "ok": true,
+          "t": {
+            "es": "Le pasas el testigo: cubre a los Eléctricos que te amenazan.",
+            "en": "Hands off to it: it covers the Electrics that threaten you."
+          }
+        },
+        {
+          "n": "Whimsicott",
+          "ok": false,
+          "t": {
+            "es": "Su Viento Afín compite y Otra Vez te encierra.",
+            "en": "Its Tailwind competes and Encore locks you."
+          }
+        }
+      ],
       "note": {
         "es": "Pone lluvia 8 turnos con Piedra Lluvia. Viento Afín da control de velocidad.",
         "en": "Sets 8-turn rain with Damp Rock. Tailwind gives speed control."
-      },
-      "tips": [
-        {
-          "es": "Piedra Lluvia alarga tu lluvia a 8 turnos: suficiente para que Swampert barra.",
-          "en": "Damp Rock extends rain to 8 turns: enough for Swampert to sweep."
-        },
-        {
-          "es": "Viento Afín turno 1 da control de velocidad a todo el equipo, no solo a los Nado Rápido.",
-          "en": "Tailwind turn 1 gives the whole team speed control, not just Swift Swimmers."
-        },
-        {
-          "es": "Vendaval bajo lluvia nunca falla; Bola Clima se vuelve Agua y pega durísimo.",
-          "en": "Hurricane never misses in rain; Weather Ball becomes Water and hits hard."
-        }
-      ]
+      }
     },
     {
       "group": "rain",
       "name": "Swampert",
       "form": "Mega",
       "sprite": 10064,
+      "own": true,
       "item": "Swampertita · Swampertite",
       "ability": "Nado Rápido · Swift Swim",
       "nature": "Firme · Adamant",
-      "spread": "Atk 32 / Vel 32 / PS 2",
+      "spread": "Ataque 32 / Velocidad 32 / PS 2",
       "moves": [
         "Hidroariete · Wave Crash",
         "Terremoto · Earthquake",
         "Puño Hielo · Ice Punch",
         "Protección · Protect"
       ],
+      "role": {
+        "es": "Barredor físico de lluvia hiperrápido.",
+        "en": "Hyper-fast physical rain sweeper."
+      },
+      "strategy": {
+        "es": [
+          "Solo megaevoluciona con lluvia activa: sin ella pierdes el doble de Velocidad.",
+          "Con Nado Rápido superas a todo el formato: Hidroariete es tu nuke.",
+          "Puño Hielo revienta a Garchomp, Dragonite y Whimsicott que quieren pararte."
+        ],
+        "en": [
+          "Only mega with rain up: without it you lose the Speed doubling.",
+          "With Swift Swim you outrun the whole format: Wave Crash is your nuke.",
+          "Ice Punch smashes Garchomp, Dragonite and Whimsicott that check you."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Bajo lluvia es de los más rápidos y potentes.",
+          "Terremoto + Puño Hielo cubren casi todo."
+        ],
+        "en": [
+          "Under rain it's among the fastest and strongest.",
+          "Earthquake + Ice Punch cover nearly everything."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Sin lluvia es lento y explotable.",
+          "Doble debilidad a Planta: cuidado con Sinistcha."
+        ],
+        "en": [
+          "Without rain it's slow and exploitable.",
+          "Double weak to Grass: careful with Sinistcha."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Garchomp",
+          "ok": true,
+          "t": {
+            "es": "Puño Hielo lo mata antes de que actúe.",
+            "en": "Ice Punch KOs it before it moves."
+          }
+        },
+        {
+          "n": "Sinistcha",
+          "ok": false,
+          "t": {
+            "es": "Su Planta te revienta: no entres contra ella.",
+            "en": "Its Grass move blasts you: don't stay in."
+          }
+        }
+      ],
       "note": {
         "es": "Bajo lluvia dobla velocidad con Nado Rápido. Pega durísimo con Hidroariete.",
         "en": "Doubles Speed under rain via Swift Swim. Hits hard with Wave Crash."
-      },
-      "tips": [
-        {
-          "es": "Solo megaevoluciona con lluvia activa: sin ella pierdes el doble de Velocidad de Nado Rápido.",
-          "en": "Only mega with rain up: without it you lose the Swift Swim Speed doubling."
-        },
-        {
-          "es": "Puño Hielo revienta a Garchomp, Dragonite y Whimsicott que intentan pararte.",
-          "en": "Ice Punch smashes Garchomp, Dragonite and Whimsicott trying to check you."
-        },
-        {
-          "es": "Hidroariete bajo lluvia es tu nuke principal; cuidado con el retroceso.",
-          "en": "Wave Crash in rain is your main nuke; mind the recoil."
-        }
-      ]
+      }
     },
     {
       "group": "rain",
       "name": "Archaludon",
       "sprite": 1018,
+      "own": true,
       "item": "Restos · Leftovers",
       "ability": "Aguante · Stamina",
       "nature": "Modesta · Modest",
-      "spread": "PS 32 / AtEsp 32 / Def 2",
+      "spread": "PS 32 / At. Esp. 32 / Defensa 2",
       "moves": [
         "Electro Shot · Electro Shot",
         "Foco Resplandor · Flash Cannon",
         "Pulso Dragón · Dragon Pulse",
         "Protección · Protect"
       ],
+      "role": {
+        "es": "Muro ofensivo de lluvia que sube Defensa.",
+        "en": "Offensive rain wall that boosts Defense."
+      },
+      "strategy": {
+        "es": [
+          "Electro Shot es instantáneo bajo lluvia (no necesita cargar) y sube tu At. Esp.",
+          "Aguante sube tu Defensa cada vez que te golpean: te vuelves un muro.",
+          "Cubre el Eléctrico que amenaza a Pelipper: forman un núcleo sólido."
+        ],
+        "en": [
+          "Electro Shot is instant under rain (no charge) and boosts your Sp. Atk.",
+          "Stamina raises Defense every time you're hit: you become a wall.",
+          "Covers the Electric threat to Pelipper: they form a solid core."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Aguante lo hace más duro con cada golpe físico.",
+          "Electro Shot instantáneo bajo lluvia es daño enorme."
+        ],
+        "en": [
+          "Stamina makes it tankier with each physical hit.",
+          "Instant Electro Shot under rain is huge damage."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Débil a Lucha y Tierra.",
+          "Depende de la lluvia para el Electro Shot instantáneo."
+        ],
+        "en": [
+          "Weak to Fighting and Ground.",
+          "Relies on rain for instant Electro Shot."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Pelipper",
+          "ok": true,
+          "t": {
+            "es": "Cubres a los Eléctricos rivales que lo amenazan.",
+            "en": "You cover the enemy Electrics that threaten it."
+          }
+        },
+        {
+          "n": "Garchomp",
+          "ok": false,
+          "t": {
+            "es": "Su Terremoto te presiona: sube Defensa y aguanta o pivotea.",
+            "en": "Its Earthquake pressures you: boost Defense or pivot."
+          }
+        }
+      ],
       "note": {
         "es": "Electro Shot es instantáneo bajo lluvia. Aguante lo hace un muro que sube Def.",
         "en": "Electro Shot is instant under rain. Stamina makes it a Def-boosting wall."
-      },
-      "tips": [
-        {
-          "es": "Electro Shot es instantáneo bajo lluvia (no necesita cargar) y sube tu AtEsp.",
-          "en": "Electro Shot is instant in rain (no charge) and boosts your Sp. Atk."
-        },
-        {
-          "es": "Aguante sube tu Defensa cada vez que te golpean: te vuelves un muro ofensivo.",
-          "en": "Stamina raises Defense each time you're hit: you become an offensive wall."
-        },
-        {
-          "es": "Cubre el Eléctrico que amenaza a Pelipper; forman un núcleo de lluvia sólido.",
-          "en": "Covers the Electric threat to Pelipper; they form a solid rain core."
-        }
-      ]
+      }
     },
     {
       "group": "rain",
       "name": "Basculegion",
       "sprite": 902,
+      "own": true,
       "item": "Agua Mística · Mystic Water",
       "ability": "Nado Rápido · Swift Swim",
       "nature": "Firme · Adamant",
-      "spread": "Atk 32 / Vel 32 / PS 2",
+      "spread": "Ataque 32 / Velocidad 32 / PS 2",
       "moves": [
         "Hidroariete · Wave Crash",
         "Last Respects · Last Respects",
         "Acua Jet · Aqua Jet",
         "Ida y Vuelta · Flip Turn"
       ],
+      "role": {
+        "es": "Nuke físico de lluvia que escala al final.",
+        "en": "Physical rain nuke that scales into the endgame."
+      },
+      "strategy": {
+        "es": [
+          "Last Respects escala con cada aliado caído: guárdalo para el final de la partida.",
+          "Bajo lluvia, Acua Jet remata rápidos debilitados con prioridad.",
+          "Ida y Vuelta te saca manteniendo momentum y reactiva jugadas de lluvia."
+        ],
+        "en": [
+          "Last Respects scales with each fainted ally: save it for the endgame.",
+          "Under rain, Aqua Jet finishes weakened fast threats with priority.",
+          "Flip Turn pivots out keeping momentum and re-enables rain plays."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Last Respects se vuelve un nuke imparable al final.",
+          "Prioridad bajo lluvia limpia rápidos."
+        ],
+        "en": [
+          "Last Respects becomes an unstoppable late nuke.",
+          "Priority under rain cleans fast threats."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Débil a Planta, Eléctrico, Hada y Siniestro.",
+          "Frágil sin la lluvia que lo acelere."
+        ],
+        "en": [
+          "Weak to Grass, Electric, Fairy and Dark.",
+          "Frail without rain speeding it up."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Sylveon",
+          "ok": false,
+          "t": {
+            "es": "Te revienta con Hada: pivotea con Ida y Vuelta.",
+            "en": "Blasts you with Fairy: pivot with Flip Turn."
+          }
+        },
+        {
+          "n": "Kingambit",
+          "ok": true,
+          "t": {
+            "es": "Acua Jet + Last Respects lo castigan al final.",
+            "en": "Aqua Jet + Last Respects punish it late."
+          }
+        }
+      ],
       "note": {
         "es": "Last Respects escala con caídas del equipo. Acua Jet da prioridad bajo lluvia.",
         "en": "Last Respects scales with team faints. Aqua Jet gives priority under rain."
-      },
-      "tips": [
-        {
-          "es": "Last Respects escala con cada aliado caído: guárdalo para el final de partida.",
-          "en": "Last Respects scales with each fainted ally: save it for the endgame."
-        },
-        {
-          "es": "Acua Jet bajo lluvia remata rápidos debilitados con prioridad.",
-          "en": "Aqua Jet in rain finishes weakened fast threats with priority."
-        },
-        {
-          "es": "Ida y Vuelta (Flip Turn) te saca manteniendo momentum y activa la lluvia del pivote.",
-          "en": "Flip Turn pivots out keeping momentum and re-enables rain plays."
-        }
-      ]
+      }
     },
     {
       "group": "rain",
       "name": "Grimmsnarl",
       "sprite": 861,
+      "own": true,
       "item": "Refleluz · Light Clay",
       "ability": "Bromista · Prankster",
       "nature": "Agitada · Impish",
-      "spread": "PS 32 / Def 32 / DefEsp 2",
+      "spread": "PS 32 / Defensa 32 / Def. Esp. 2",
       "moves": [
         "Reflejo · Reflect",
         "Pantalla de Luz · Light Screen",
         "Corazón Roto · Spirit Break",
         "Última Palabra · Parting Shot"
       ],
+      "role": {
+        "es": "Soporte de pantallas con prioridad.",
+        "en": "Priority screens support."
+      },
+      "strategy": {
+        "es": [
+          "Pon ambas pantallas turno 1 gracias a la prioridad de Bromista; Refleluz las alarga a 8 turnos.",
+          "Corazón Roto baja la Defensa del rival y castiga a los que aguantan.",
+          "Última Palabra pivotea y baja el ataque enemigo cuando ya no necesitas pantallas."
+        ],
+        "en": [
+          "Set both screens turn 1 via Prankster priority; Light Clay extends them to 8 turns.",
+          "Spirit Break lowers the foe's Defense and punishes bulk-reliant Pokémon.",
+          "Parting Shot pivots and lowers enemy Attack once screens are up."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Pantallas con prioridad habilitan setups del equipo.",
+          "Refleluz mantiene la defensa doble 8 turnos."
+        ],
+        "en": [
+          "Priority screens enable team setups.",
+          "Light Clay keeps the double defense for 8 turns."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Taunt y Espejo Mágico apagan sus pantallas.",
+          "Ofensiva baja fuera de Corazón Roto."
+        ],
+        "en": [
+          "Taunt and Magic Bounce shut off its screens.",
+          "Low offense outside Spirit Break."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Sableye",
+          "ok": false,
+          "t": {
+            "es": "Espejo Mágico rebota tus pantallas: no las pongas contra él.",
+            "en": "Magic Bounce reflects your screens: don't set into it."
+          }
+        },
+        {
+          "n": "Garchomp",
+          "ok": true,
+          "t": {
+            "es": "Con pantallas puestas aguantas y bajas su ataque.",
+            "en": "With screens up you tank it and lower its Attack."
+          }
+        }
+      ],
       "note": {
         "es": "Pantallas con prioridad por Bromista. Refleluz las alarga a 8 turnos.",
         "en": "Priority screens via Prankster. Light Clay extends them to 8 turns."
+      }
+    },
+    {
+      "group": "trickroom",
+      "name": "Mawile",
+      "form": "Mega",
+      "sprite": 10052,
+      "own": true,
+      "fresh": true,
+      "freshNote": {
+        "es": "NUEVA pieza que ya tienes: Mega Mawile es básica del meta M-B. Súbela a tu núcleo.",
+        "en": "NEW piece you now own: Mega Mawile is an M-B staple. Promote it to your core."
       },
-      "tips": [
+      "item": "Mawilita · Mawilite",
+      "ability": "Fuerza Bruta→Fuerza Colosal · Intimidate→Huge Power",
+      "nature": "Firme · Adamant",
+      "spread": "Ataque 32 / PS 32 / Defensa 2",
+      "moves": [
+        "Carantoña · Play Rough",
+        "Golpe Bajo · Sucker Punch",
+        "Cabeza de Hierro · Iron Head",
+        "Protección · Protect"
+      ],
+      "role": {
+        "es": "Rompedor físico letal bajo Trick Room. Núcleo seguro con Gholdengo.",
+        "en": "Lethal physical breaker under Trick Room. Safe core with Gholdengo."
+      },
+      "strategy": {
+        "es": [
+          "Antes de megaevolucionar, Intimidación baja el ataque rival; al Mega ganas Fuerza Colosal (ataque duplicado).",
+          "Bajo Trick Room no dependes de Golpe Bajo: usa Carantoña y Cabeza de Hierro libremente.",
+          "Con Farigiraf montando el Trick Room, Mawile pega primero y revienta el meta."
+        ],
+        "en": [
+          "Before mega, Intimidate lowers enemy Attack; on mega you gain Huge Power (doubled Attack).",
+          "Under Trick Room you don't rely on Sucker Punch: use Play Rough and Iron Head freely.",
+          "With Farigiraf setting Trick Room, Mawile moves first and breaks the meta."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Fuerza Colosal la vuelve uno de los mayores picos de daño físico.",
+          "Acero/Hada: resiste medio meta y pega súper-efectivo a Dragones y Siniestros."
+        ],
+        "en": [
+          "Huge Power makes it one of the biggest physical damage spikes.",
+          "Steel/Fairy: resists half the meta and hits Dragons and Darks super-effectively."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Muy lenta: fuera de Trick Room depende de Golpe Bajo.",
+          "Débil a Fuego y Tierra: cuidado con Incineroar y Garchomp."
+        ],
+        "en": [
+          "Very slow: outside Trick Room it relies on Sucker Punch.",
+          "Weak to Fire and Ground: careful with Incineroar and Garchomp."
+        ]
+      },
+      "vs": [
         {
-          "es": "Pon ambas pantallas turno 1 gracias a la prioridad de Bromista; Refleluz las alarga.",
-          "en": "Set both screens turn 1 via Prankster priority; Light Clay extends them."
+          "n": "Sylveon",
+          "ok": true,
+          "t": {
+            "es": "Cabeza de Hierro revienta a las Hadas rivales.",
+            "en": "Iron Head smashes enemy Fairies."
+          }
         },
         {
-          "es": "Corazón Roto baja la Defensa del rival y castiga a los que dependen de aguantar.",
-          "en": "Spirit Break lowers the foe's Defense and punishes bulk-reliant Pokémon."
+          "n": "Kingambit",
+          "ok": true,
+          "t": {
+            "es": "Carantoña lo castiga fuerte.",
+            "en": "Play Rough punishes it hard."
+          }
         },
         {
-          "es": "Cuidado con Taunt y con Espejo Mágico de Sableye/Espadas: cortan tus pantallas.",
-          "en": "Beware Taunt and Sableye's Magic Bounce: they shut off your screens."
+          "n": "Incineroar",
+          "ok": false,
+          "t": {
+            "es": "Intimidación anula tu ataque y su Fuego te quema: apunta a otro.",
+            "en": "Intimidate cancels your Attack and its Fire burns you: target elsewhere."
+          }
         }
-      ]
+      ],
+      "note": {
+        "es": "Fuerza Colosal duplica el ataque. Emparéjala con Farigiraf/Torkoal para Trick Room.",
+        "en": "Huge Power doubles Attack. Pair it with Farigiraf/Torkoal for Trick Room."
+      }
+    },
+    {
+      "group": "trickroom",
+      "name": "Farigiraf",
+      "sprite": 981,
+      "own": true,
+      "fresh": true,
+      "freshNote": {
+        "es": "Ya lo tienes: su rol de Trick Room habilita a Mega Mawile y Torkoal. Vale su hueco.",
+        "en": "You already own it: its Trick Room role enables Mega Mawile and Torkoal. Worth the slot."
+      },
+      "item": "Baya Chiri · Colbur Berry",
+      "ability": "Armadura Astral · Armor Tail",
+      "nature": "Sereno · Quiet",
+      "spread": "PS 32 / At. Esp. 32 / Defensa 2",
+      "moves": [
+        "Espacio Raro · Trick Room",
+        "Psíquico · Psychic",
+        "Refuerzo · Helping Hand",
+        "Protección · Protect"
+      ],
+      "role": {
+        "es": "Montador de Trick Room a prueba de prioridad. Ya lo tienes.",
+        "en": "Priority-proof Trick Room setter. You already own it."
+      },
+      "strategy": {
+        "es": [
+          "Armadura Astral bloquea TODA prioridad (Sorpresa, Golpe Bajo): tu Trick Room turno 1 es seguro.",
+          "Monta Espacio Raro y deja que Mawile/Torkoal peguen primero durante 5 turnos.",
+          "Refuerzo potencia el golpe de tu aliado; Baya Chiri te salva de un Siniestro."
+        ],
+        "en": [
+          "Armor Tail blocks ALL priority (Fake Out, Sucker Punch): your turn-1 Trick Room is safe.",
+          "Set Trick Room and let Mawile/Torkoal move first for 5 turns.",
+          "Helping Hand boosts your ally's hit; Colbur Berry saves you from a Dark move."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Armadura Astral hace tu Trick Room casi imposible de interrumpir.",
+          "Buena defensa mixta: entra y monta sin morir."
+        ],
+        "en": [
+          "Armor Tail makes your Trick Room nearly impossible to disrupt.",
+          "Good mixed bulk: comes in and sets without dying."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Débil a Siniestro y Bicho.",
+          "Pasivo si le quitan el Trick Room con otro Trick Room."
+        ],
+        "en": [
+          "Weak to Dark and Bug.",
+          "Passive if the foe flips Trick Room back."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Incineroar",
+          "ok": true,
+          "t": {
+            "es": "Armadura Astral ignora su Sorpresa: montas Trick Room igual.",
+            "en": "Armor Tail ignores its Fake Out: you set Trick Room anyway."
+          }
+        },
+        {
+          "n": "Kingambit",
+          "ok": false,
+          "t": {
+            "es": "Su Golpe Bajo no te frena, pero su Siniestro pega fuerte: lleva Baya Chiri.",
+            "en": "Sucker Punch can't stop you, but its Dark STAB hurts: hold Colbur."
+          }
+        }
+      ],
+      "note": {
+        "es": "Armadura Astral bloquea prioridad y asegura el Trick Room para Mawile.",
+        "en": "Armor Tail blocks priority and secures Trick Room for Mawile."
+      }
+    },
+    {
+      "group": "trickroom",
+      "name": "Scovillain",
+      "form": "Mega",
+      "sprite": 952,
+      "own": true,
+      "fresh": true,
+      "freshNote": {
+        "es": "NUEVA pieza que ya tienes: redirige ataques con Danza Amiga y protege a Mawile/Sinistcha.",
+        "en": "NEW piece you now own: redirects with Rage Powder and protects Mawile/Sinistcha."
+      },
+      "item": "Scovillainita · Scovillainite",
+      "ability": "Clorofila→Rocío Picante · Chlorophyll→Spicy Spray",
+      "nature": "Modesta · Modest",
+      "spread": "PS 32 / At. Esp. 32 / Defensa 2",
+      "moves": [
+        "Danza Amiga · Rage Powder",
+        "Sofoco · Overheat",
+        "Drenadoras · Leech Seed",
+        "Protección · Protect"
+      ],
+      "role": {
+        "es": "Soporte de redirección que quema al contacto.",
+        "en": "Redirection support that burns on contact."
+      },
+      "strategy": {
+        "es": [
+          "Danza Amiga redirige los ataques rivales hacia ti: protege a tu barredor lento.",
+          "Al Mega, Rocío Picante quema a cualquiera que te golpee por contacto.",
+          "Drenadoras + tu buena defensa te mantienen curándote mientras rediriges."
+        ],
+        "en": [
+          "Rage Powder redirects enemy attacks to you: shield your slow sweeper.",
+          "On mega, Spicy Spray burns anyone that hits you by contact.",
+          "Leech Seed + your bulk keep you healing while you redirect."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Redirección + quemas facilitan la barrida de Mawile.",
+          "Planta/Fuego cubre a Aceros y Aguas."
+        ],
+        "en": [
+          "Redirection + burns enable Mawile's sweep.",
+          "Grass/Fire covers Steels and Waters."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Débil a Vuelo, Roca, Veneno y Psíquico.",
+          "Sofoco baja tu At. Esp.: no lo repitas sin razón."
+        ],
+        "en": [
+          "Weak to Flying, Rock, Poison and Psychic.",
+          "Overheat lowers your Sp. Atk: don't spam it."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Kingambit",
+          "ok": true,
+          "t": {
+            "es": "Sofoco lo derrite y Rocío Picante lo quema si te toca.",
+            "en": "Overheat melts it and Spicy Spray burns it on contact."
+          }
+        },
+        {
+          "n": "Charizard-Y",
+          "ok": false,
+          "t": {
+            "es": "Vuela sobre tus quemas y te pega Fuego/Vuelo: apunta a otro.",
+            "en": "Flies over your burns and hits Fire/Flying: target elsewhere."
+          }
+        }
+      ],
+      "note": {
+        "es": "Redirige con Danza Amiga y quema por contacto con Rocío Picante.",
+        "en": "Redirects with Rage Powder and burns on contact with Spicy Spray."
+      }
     },
     {
       "group": "extra",
       "name": "Kingambit",
       "sprite": 983,
-      "item": "Banda Focus · Focus Sash",
+      "own": true,
+      "item": "Gafas de Sol · Black Glasses",
       "ability": "Competitivo / General Supremo · Competitive / Supreme Overlord",
       "nature": "Firme · Adamant",
-      "spread": "Atk 32 / PS 32 / Def 2",
+      "spread": "Ataque 32 / PS 32 / Defensa 2",
       "moves": [
         "Golpe Bajo · Sucker Punch",
         "Reverencia · Kowtow Cleave",
         "Cabeza de Hierro · Iron Head",
         "Danza Espada · Swords Dance"
       ],
-      "note": {
-        "es": "En Dobles usa General Supremo (sube con aliados caídos). Golpe Bajo es prioridad.",
-        "en": "In Doubles uses Supreme Overlord (boosts as allies faint). Sucker Punch is priority."
+      "role": {
+        "es": "Rompedor de prioridad que escala al final.",
+        "en": "Priority breaker that scales into the endgame."
       },
-      "tips": [
+      "strategy": {
+        "es": [
+          "En Dobles usa General Supremo: sube tu ataque por cada aliado caído (pega más al final).",
+          "Golpe Bajo falla si el rival NO ataca: no lo uses contra Protección o setup.",
+          "Con un aliado caído, Danza Espada + Golpe Bajo se vuelven imparables."
+        ],
+        "en": [
+          "In Doubles use Supreme Overlord: Attack rises per fainted ally (strongest late).",
+          "Sucker Punch fails if the foe does NOT attack: don't use it into Protect or setup.",
+          "With one fallen ally, Swords Dance + Sucker Punch become unstoppable."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Prioridad + escala de daño lo hacen letal a final de partida.",
+          "Competitivo (Singles) castiga cualquier Intimidación con +2."
+        ],
+        "en": [
+          "Priority + damage scaling make it lethal late.",
+          "Competitive (Singles) punishes any Intimidate with +2."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Débil a Lucha, Fuego y Tierra.",
+          "Golpe Bajo es leíble: falla contra estados y Protección."
+        ],
+        "en": [
+          "Weak to Fighting, Fire and Ground.",
+          "Sucker Punch is readable: fails into status and Protect."
+        ]
+      },
+      "vs": [
         {
-          "es": "En Dobles, General Supremo sube tu ataque por cada aliado caído: pega más al final.",
-          "en": "In Doubles, Supreme Overlord boosts your Attack per fainted ally: strongest late."
+          "n": "Incineroar",
+          "ok": false,
+          "t": {
+            "es": "Intimidación + Fuego lo frenan: cuidado con quedarte.",
+            "en": "Intimidate + Fire check it: careful staying in."
+          }
         },
         {
-          "es": "Golpe Bajo falla si el rival no ataca: no lo uses contra Protección o setup.",
-          "en": "Sucker Punch fails if the foe doesn't attack: don't use it into Protect or setup."
-        },
-        {
-          "es": "Competitivo (Singles) castiga Intimidación subiendo +2 AtEsp… ojo, tú pegas físico: usa la versión correcta por formato.",
-          "en": "Defiant (Singles) punishes Intimidate with +2; pick the right ability per format."
+          "n": "Sinistcha",
+          "ok": true,
+          "t": {
+            "es": "Reverencia ignora Protección y castiga soportes.",
+            "en": "Kowtow Cleave ignores Protect and punishes supports."
+          }
         }
-      ]
+      ],
+      "note": {
+        "es": "General Supremo (Dobles) sube con aliados caídos. Elige la habilidad por formato.",
+        "en": "Supreme Overlord (Doubles) boosts as allies faint. Pick the ability per format."
+      }
     },
     {
       "group": "extra",
       "name": "Mimikyu",
       "sprite": 778,
-      "item": "Vidasfera · Life Orb",
+      "own": true,
+      "item": "Baya Ziuela · Lum Berry",
       "ability": "Disfraz · Disguise",
       "nature": "Alegre · Jolly",
-      "spread": "Atk 32 / Vel 32 / PS 2",
+      "spread": "Ataque 32 / Velocidad 32 / PS 2",
       "moves": [
         "Danza Espada · Swords Dance",
         "Carantoña · Play Rough",
         "Sombra Vil · Shadow Sneak",
         "Puño Drenaje · Drain Punch"
       ],
+      "role": {
+        "es": "Barredor con turno de setup garantizado.",
+        "en": "Sweeper with a guaranteed setup turn."
+      },
+      "strategy": {
+        "es": [
+          "Disfraz absorbe el primer golpe: úsalo para un Danza Espada seguro turno 1.",
+          "Con +2, Sombra Vil remata con prioridad e ignora subidas de evasión.",
+          "Baya Ziuela te cura de una quema o parálisis que arruinaría tu barrida."
+        ],
+        "en": [
+          "Disguise absorbs the first hit: use it for a safe turn-1 Swords Dance.",
+          "At +2, Shadow Sneak finishes with priority and ignores evasion boosts.",
+          "Lum Berry cures a burn or paralysis that would ruin your sweep."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Disfraz garantiza el setup contra casi todo.",
+          "Prioridad Fantasma remata rápidos debilitados."
+        ],
+        "en": [
+          "Disguise guarantees setup against almost anything.",
+          "Ghost priority finishes weakened fast threats."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Frágil una vez roto el Disfraz.",
+          "Débil a Acero y Fantasma; Puño Bala lo mata."
+        ],
+        "en": [
+          "Frail once Disguise breaks.",
+          "Weak to Steel and Ghost; Bullet Punch KOs it."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Garchomp",
+          "ok": true,
+          "t": {
+            "es": "Disfraz aguanta y Carantoña lo revienta.",
+            "en": "Disguise tanks it and Play Rough blasts it."
+          }
+        },
+        {
+          "n": "Metagross",
+          "ok": false,
+          "t": {
+            "es": "Puño Bala rompe tu Disfraz y te mata: no le hagas setup encima.",
+            "en": "Bullet Punch breaks Disguise and kills you: don't set up on it."
+          }
+        }
+      ],
       "note": {
         "es": "Disfraz garantiza un turno de setup. Sombra Vil remata con prioridad.",
         "en": "Disguise guarantees a setup turn. Shadow Sneak finishes with priority."
-      },
-      "tips": [
-        {
-          "es": "Disfraz te garantiza un turno: úsalo para Danza Espada seguro turno 1.",
-          "en": "Disguise guarantees a turn: use it for a safe turn-1 Swords Dance."
-        },
-        {
-          "es": "Sombra Vil remata con prioridad tras el +2; ignora aumentos de evasión.",
-          "en": "Shadow Sneak finishes with priority after +2; ignores evasion boosts."
-        },
-        {
-          "es": "Carantoña pega a Dragones y Siniestros; Puño Drenaje te cura y toca Aceros.",
-          "en": "Play Rough hits Dragons and Darks; Drain Punch heals you and hits Steels."
-        }
-      ]
+      }
     },
     {
       "group": "extra",
       "name": "Aerodactyl",
       "form": "Mega",
       "sprite": 10042,
+      "own": true,
       "item": "Aerodactylita · Aerodactylite",
       "ability": "Fuerza Bruta · Tough Claws",
       "nature": "Alegre · Jolly",
-      "spread": "Atk 32 / Vel 32 / PS 2",
+      "spread": "Ataque 32 / Velocidad 32 / PS 2",
       "moves": [
         "Avalancha · Rock Slide",
         "Viento Afín · Tailwind",
         "Ala Bis · Dual Wingbeat",
         "Protección · Protect"
       ],
+      "role": {
+        "es": "Control de velocidad hiperrápido con daño en área.",
+        "en": "Hyper-fast speed control with spread damage."
+      },
+      "strategy": {
+        "es": [
+          "Eres de los más rápidos del formato: pon Viento Afín turno 1 antes de que el rival actúe.",
+          "Avalancha en área tiene 30% de amedrentar: presiona a los dos rivales.",
+          "Fuerza Bruta potencia tus contactos (Ala Bis, Avalancha): pegas más de lo que parece."
+        ],
+        "en": [
+          "You're among the fastest: set Tailwind turn 1 before the foe moves.",
+          "Rock Slide spreads with a 30% flinch: pressures both foes.",
+          "Tough Claws boosts contact moves (Dual Wingbeat, Rock Slide): hits harder than it looks."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Velocidad extrema para poner Viento Afín primero.",
+          "Avalancha en área con amedrentar da presión constante."
+        ],
+        "en": [
+          "Extreme Speed to set Tailwind first.",
+          "Spread Rock Slide with flinch gives constant pressure."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Frágil: muere a prioridad y a Aguas fuertes.",
+          "Débil a Agua, Hielo, Roca, Acero y Eléctrico."
+        ],
+        "en": [
+          "Frail: dies to priority and strong Water hits.",
+          "Weak to Water, Ice, Rock, Steel and Electric."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Charizard-Y",
+          "ok": true,
+          "t": {
+            "es": "Avalancha lo tumba y le ganas la velocidad.",
+            "en": "Rock Slide KOs it and you outspeed."
+          }
+        },
+        {
+          "n": "Basculegion",
+          "ok": false,
+          "t": {
+            "es": "Su Acua Jet prioritario te mata: no te expongas.",
+            "en": "Its priority Aqua Jet kills you: don't expose yourself."
+          }
+        }
+      ],
       "note": {
         "es": "Uno de los más rápidos del formato. Pone Viento Afín y pega en área con Avalancha.",
         "en": "One of the fastest in the format. Sets Tailwind and spreads with Rock Slide."
-      },
-      "tips": [
-        {
-          "es": "Eres de los más rápidos del formato: pon Viento Afín antes de que llegue el rival.",
-          "en": "You're among the fastest: set Tailwind before the foe can move."
-        },
-        {
-          "es": "Avalancha en área tiene 30% de amedrentar: presiona a ambos rivales.",
-          "en": "Rock Slide spreads with a 30% flinch: pressures both foes."
-        },
-        {
-          "es": "Fuerza Bruta potencia los contactos (Ala Bis, Avalancha): pegas más de lo que parece.",
-          "en": "Tough Claws boosts contact moves (Dual Wingbeat, Rock Slide): hits harder than it looks."
-        }
-      ]
+      }
     },
     {
       "group": "extra",
       "name": "Sableye",
       "form": "Mega",
       "sprite": 10066,
+      "own": true,
       "item": "Refleluz · Light Clay",
       "ability": "Bromista→Espejo Mágico · Prankster→Magic Bounce",
       "nature": "Osada · Bold",
-      "spread": "PS 32 / Def 32 / DefEsp 2",
+      "spread": "PS 32 / Defensa 32 / Def. Esp. 2",
       "moves": [
         "Fuego Fatuo · Will-O-Wisp",
         "Reflejo · Reflect",
         "Otra Vez · Encore",
         "Juego Sucio · Foul Play"
       ],
+      "role": {
+        "es": "Soporte tramposo anti-setup y anti-hazards.",
+        "en": "Tricky support: anti-setup and anti-hazards."
+      },
+      "strategy": {
+        "es": [
+          "Antes de megaevolucionar, usa Bromista para pantallas o Fuego Fatuo con prioridad.",
+          "Ya Mega, Espejo Mágico rebota estados y hazards: entra contra Grimmsnarl y Hippowdon.",
+          "Otra Vez encierra al rival en un movimiento de apoyo y abre el turno a tu aliado."
+        ],
+        "en": [
+          "Before mega, use Prankster for priority screens or Will-O-Wisp.",
+          "Once mega, Magic Bounce reflects status and hazards: switch into Grimmsnarl and Hippowdon.",
+          "Encore locks the foe into a support move and opens the turn for your ally."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Espejo Mágico anula estados, hazards y Trampa Rocas.",
+          "Juego Sucio castiga a físicos con su propio ataque."
+        ],
+        "en": [
+          "Magic Bounce nullifies status, hazards and Stealth Rock.",
+          "Foul Play punishes physicals with their own Attack."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Débil a Hada.",
+          "Ofensiva casi nula: es puro soporte."
+        ],
+        "en": [
+          "Weak to Fairy.",
+          "Almost no offense: pure support."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Grimmsnarl",
+          "ok": true,
+          "t": {
+            "es": "Espejo Mágico rebota sus pantallas y Última Palabra.",
+            "en": "Magic Bounce reflects its screens and Parting Shot."
+          }
+        },
+        {
+          "n": "Sylveon",
+          "ok": false,
+          "t": {
+            "es": "Su Hada te revienta: no entres contra ella.",
+            "en": "Its Fairy blasts you: don't switch in."
+          }
+        }
+      ],
       "note": {
         "es": "Antes de Megaevolucionar pone pantallas con prioridad; ya Mega, rebota estados.",
         "en": "Before mega it sets priority screens; once mega, it bounces status."
+      }
+    },
+    {
+      "group": "extra",
+      "name": "Staraptor",
+      "form": "Mega",
+      "sprite": 398,
+      "own": true,
+      "fresh": true,
+      "freshNote": {
+        "es": "NUEVA pieza que ya tienes: Mega Staraptor con Buscabroncas es un pico ofensivo del meta M-B.",
+        "en": "NEW piece you now own: Mega Staraptor with Contrary is an M-B offensive threat."
       },
-      "tips": [
+      "item": "Staraptorita · Staraptorite",
+      "ability": "Buscabroncas · Contrary",
+      "nature": "Firme · Adamant",
+      "spread": "Ataque 32 / Velocidad 32 / PS 2",
+      "moves": [
+        "A Bocajarro · Close Combat",
+        "Pájaro Osado · Brave Bird",
+        "Respiro · Roost",
+        "Protección · Protect"
+      ],
+      "role": {
+        "es": "Atacante que se vuelve fortaleza al golpear.",
+        "en": "Attacker that turns into a fortress as it hits."
+      },
+      "strategy": {
+        "es": [
+          "A Bocajarro normalmente baja tu defensa; con Buscabroncas la SUBE: pegas y te fortaleces a la vez.",
+          "Encadena A Bocajarro: cada uso te vuelve más tanque mientras castigas.",
+          "Respiro te cura para seguir en el campo como fortaleza ofensiva."
+        ],
+        "en": [
+          "Close Combat normally lowers your defenses; with Contrary it RAISES them: you hit and tank at once.",
+          "Chain Close Combat: each use makes you bulkier while you punish.",
+          "Roost heals you to stay on the field as an offensive fortress."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Buscabroncas convierte A Bocajarro en setup ofensivo Y defensivo.",
+          "Respiro lo sostiene: difícil de tumbar tras 2-3 golpes."
+        ],
+        "en": [
+          "Contrary turns Close Combat into offense AND defense setup.",
+          "Roost sustains it: hard to break after 2-3 hits."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Pájaro Osado tiene retroceso: mide tu vida.",
+          "Débil a Eléctrico, Hielo, Roca y Hada."
+        ],
+        "en": [
+          "Brave Bird has recoil: watch your HP.",
+          "Weak to Electric, Ice, Rock and Fairy."
+        ]
+      },
+      "vs": [
         {
-          "es": "Antes de megaevolucionar, usa Bromista para pantallas o Fuego Fatuo con prioridad.",
-          "en": "Before mega, use Prankster for priority screens or Will-O-Wisp."
+          "n": "Corviknight",
+          "ok": true,
+          "t": {
+            "es": "A Bocajarro repetido lo rompe mientras subes defensas.",
+            "en": "Repeated Close Combat breaks it while you boost."
+          }
         },
         {
-          "es": "Ya Mega, Espejo Mágico rebota estados y hazards: entra contra Grimmsnarl y Hippowdon.",
-          "en": "Once mega, Magic Bounce reflects status and hazards: switch into Grimmsnarl and Hippowdon."
-        },
-        {
-          "es": "Otra Vez encierra al rival en un movimiento de apoyo y abre el turno a tu aliado.",
-          "en": "Encore locks the foe into a support move and opens the turn for your ally."
+          "n": "Rotom-Wash",
+          "ok": false,
+          "t": {
+            "es": "Su Eléctrico te castiga: no entres contra él.",
+            "en": "Its Electric hurts you: don't switch in."
+          }
         }
-      ]
+      ],
+      "note": {
+        "es": "Buscabroncas invierte las bajadas de A Bocajarro en subidas: atacas y te fortaleces.",
+        "en": "Contrary flips Close Combat's drops into boosts: you attack and get tankier."
+      }
+    },
+    {
+      "group": "extra",
+      "name": "Whimsicott",
+      "sprite": 547,
+      "own": true,
+      "fresh": true,
+      "freshNote": {
+        "es": "Ya lo tienes pero quizá sin build: Whimsicott es el nº1 en control de velocidad de M-B.",
+        "en": "You own it but maybe without a build: Whimsicott is M-B's #1 speed control."
+      },
+      "item": "Banda Focus · Focus Sash",
+      "ability": "Bromista · Prankster",
+      "nature": "Alegre · Jolly",
+      "spread": "At. Esp. 32 / Velocidad 32 / PS 2",
+      "moves": [
+        "Viento Afín · Tailwind",
+        "Fuerza Lunar · Moonblast",
+        "Otra Vez · Encore",
+        "Protección · Protect"
+      ],
+      "role": {
+        "es": "El mejor control de velocidad del formato.",
+        "en": "The best speed control in the format."
+      },
+      "strategy": {
+        "es": [
+          "Bromista te da Viento Afín y Otra Vez con prioridad: controlas el turno pase lo que pase.",
+          "Otra Vez encierra a un rival en un movimiento (Protección, setup) y abre el 2v1.",
+          "Banda Focus garantiza que sobrevives un turno para poner el Viento Afín."
+        ],
+        "en": [
+          "Prankster gives you priority Tailwind and Encore: you control the turn no matter what.",
+          "Encore locks a foe into one move (Protect, setup) and opens a 2v1.",
+          "Focus Sash guarantees you survive a turn to set Tailwind."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Viento Afín + Otra Vez prioritarios dictan el ritmo.",
+          "Prankster funciona incluso más lento que el rival."
+        ],
+        "en": [
+          "Priority Tailwind + Encore dictate tempo.",
+          "Prankster works even slower than the foe."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Frágil: cae a cualquier golpe neutro fuerte.",
+          "Bromista no afecta a tipo Siniestro."
+        ],
+        "en": [
+          "Frail: falls to any strong neutral hit.",
+          "Prankster doesn't affect Dark types."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Kingambit",
+          "ok": false,
+          "t": {
+            "es": "Es Siniestro: tu Otra Vez prioritario no le funciona.",
+            "en": "It's Dark: your priority Encore doesn't work on it."
+          }
+        },
+        {
+          "n": "Garchomp",
+          "ok": true,
+          "t": {
+            "es": "Otra Vez lo encierra y Fuerza Lunar lo castiga.",
+            "en": "Encore locks it and Moonblast punishes it."
+          }
+        }
+      ],
+      "note": {
+        "es": "Control de velocidad y disrupción con prioridad de Bromista. Pieza top del meta.",
+        "en": "Speed control and disruption via Prankster priority. Top meta piece."
+      }
+    },
+    {
+      "group": "extra",
+      "name": "Gholdengo",
+      "sprite": 1000,
+      "own": true,
+      "fresh": true,
+      "freshNote": {
+        "es": "Ya lo tienes: con Maquinación es un barredor de techo alto, no solo un muro anti-estado.",
+        "en": "You own it: with Nasty Plot it's a high-ceiling sweeper, not just a status wall."
+      },
+      "item": "Revestimiento Metálico · Metal Coat",
+      "ability": "Cuerpo Áureo · Good as Gold",
+      "nature": "Modesta · Modest",
+      "spread": "PS 32 / At. Esp. 32 / Def. Esp. 2",
+      "moves": [
+        "Lluvia Dorada · Make It Rain",
+        "Bola Sombra · Shadow Ball",
+        "Maquinación · Nasty Plot",
+        "Protección · Protect"
+      ],
+      "role": {
+        "es": "Barredor especial inmune a estados.",
+        "en": "Special sweeper immune to status."
+      },
+      "strategy": {
+        "es": [
+          "Cuerpo Áureo te hace INMUNE a movimientos de estado: entra libre contra Fuego Fatuo y Otra Vez.",
+          "Con Protección de tu aliado, usa Maquinación (+2 At. Esp.) y luego barre.",
+          "Lluvia Dorada + Revestimiento Metálico pega durísimo; Bola Sombra cubre Fantasmas/Psíquicos."
+        ],
+        "en": [
+          "Good as Gold makes you IMMUNE to status moves: switch in free vs Will-O-Wisp and Encore.",
+          "With an ally's Protect, use Nasty Plot (+2 Sp. Atk) then sweep.",
+          "Make It Rain + Metal Coat hits very hard; Shadow Ball covers Ghosts/Psychics."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Inmunidad total a estados por Cuerpo Áureo.",
+          "Tras Maquinación su daño especial es enorme."
+        ],
+        "en": [
+          "Total status immunity via Good as Gold.",
+          "After Nasty Plot its special damage is huge."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Débil a Fuego, Tierra, Fantasma y Siniestro.",
+          "Lluvia Dorada baja tu At. Esp. tras usarla."
+        ],
+        "en": [
+          "Weak to Fire, Ground, Ghost and Dark.",
+          "Make It Rain lowers your Sp. Atk after use."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Grimmsnarl",
+          "ok": true,
+          "t": {
+            "es": "Inmune a su Fuego Fatuo/estado; Lluvia Dorada lo rompe.",
+            "en": "Immune to its Will-O-Wisp/status; Make It Rain breaks it."
+          }
+        },
+        {
+          "n": "Incineroar",
+          "ok": false,
+          "t": {
+            "es": "Su Fuego te revienta: apunta a otro o pivotea.",
+            "en": "Its Fire blasts you: target elsewhere or pivot."
+          }
+        }
+      ],
+      "note": {
+        "es": "Cuerpo Áureo lo hace inmune a estados. Maquinación le da un techo ofensivo alto.",
+        "en": "Good as Gold grants status immunity. Nasty Plot gives it a high offensive ceiling."
+      }
+    },
+    {
+      "group": "extra",
+      "name": "Sneasler",
+      "sprite": 903,
+      "own": true,
+      "fresh": true,
+      "freshNote": {
+        "es": "Ya lo tienes: con Hierba Blanca + Liberalibra se vuelve hiperrápido tras el primer A Bocajarro.",
+        "en": "You own it: with White Herb + Unburden it becomes hyper-fast after the first Close Combat."
+      },
+      "item": "Hierba Blanca · White Herb",
+      "ability": "Liberalibra · Unburden",
+      "nature": "Alegre · Jolly",
+      "spread": "Ataque 32 / Velocidad 32 / PS 2",
+      "moves": [
+        "A Bocajarro · Close Combat",
+        "Garra Nociva · Dire Claw",
+        "Sorpresa · Fake Out",
+        "Protección · Protect"
+      ],
+      "role": {
+        "es": "Barredor de lucha que duplica velocidad al gastar objeto.",
+        "en": "Fighting sweeper that doubles Speed when its item is used."
+      },
+      "strategy": {
+        "es": [
+          "A Bocajarro baja tus defensas, pero la Hierba Blanca las restaura al instante.",
+          "Al consumir la Hierba, Liberalibra DUPLICA tu velocidad: te vuelves imparable.",
+          "Garra Nociva puede envenenar o dormir; Sorpresa da tempo turno 1."
+        ],
+        "en": [
+          "Close Combat lowers your defenses, but White Herb restores them instantly.",
+          "Consuming the Herb triggers Unburden, DOUBLING your Speed: you become unstoppable.",
+          "Dire Claw can poison or sleep; Fake Out gives turn-1 tempo."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Tras activar Liberalibra supera a casi todo.",
+          "Garra Nociva mete estados aleatorios muy molestos."
+        ],
+        "en": [
+          "After Unburden it outspeeds nearly everything.",
+          "Dire Claw inflicts annoying random status."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Frágil: cae a prioridad y a golpes neutros fuertes.",
+          "Débil a Vuelo, Psíquico y Hada."
+        ],
+        "en": [
+          "Frail: falls to priority and strong neutral hits.",
+          "Weak to Flying, Psychic and Fairy."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Kingambit",
+          "ok": true,
+          "t": {
+            "es": "A Bocajarro lo revienta súper-efectivo.",
+            "en": "Close Combat blasts it super-effectively."
+          }
+        },
+        {
+          "n": "Sylveon",
+          "ok": false,
+          "t": {
+            "es": "Su Hada te mata: apunta a otro objetivo.",
+            "en": "Its Fairy KOs you: target something else."
+          }
+        }
+      ],
+      "note": {
+        "es": "Hierba Blanca restaura las bajadas de A Bocajarro y activa Liberalibra (+velocidad).",
+        "en": "White Herb restores Close Combat's drops and triggers Unburden (+Speed)."
+      }
+    },
+    {
+      "group": "extra",
+      "name": "Hydreigon",
+      "sprite": 635,
+      "own": false,
+      "fresh": true,
+      "freshNote": {
+        "es": "NO lo tienes: pieza top-A por cazar. Cubre huecos especiales y es inmune a Tierra.",
+        "en": "You DON'T own it: a top-A piece to hunt. Covers special gaps and is Ground-immune."
+      },
+      "item": "Pañuelo Elección · Choice Scarf",
+      "ability": "Levitación · Levitate",
+      "nature": "Miedosa · Timid",
+      "spread": "At. Esp. 32 / Velocidad 32 / PS 2",
+      "moves": [
+        "Cometa Draco · Draco Meteor",
+        "Pulso Umbrío · Dark Pulse",
+        "Alarido · Snarl",
+        "Tierra Viva · Earth Power"
+      ],
+      "role": {
+        "es": "Pivote especial y revienta-rápidos. Por conseguir.",
+        "en": "Special pivot and revenge-killer. Still to acquire."
+      },
+      "strategy": {
+        "es": [
+          "Con Pañuelo superas a todo el meta: entra a rematar amenazas debilitadas.",
+          "Cometa Draco pega durísimo (aunque baja tu At. Esp. y te encierra al elegir).",
+          "Alarido baja el ataque especial rival y da control; Levitación te da inmunidad a Tierra."
+        ],
+        "en": [
+          "With Scarf you outspeed the whole meta: revenge weakened threats.",
+          "Draco Meteor hits very hard (but lowers Sp. Atk and Choice-locks you).",
+          "Snarl lowers enemy Sp. Atk for control; Levitate grants Ground immunity."
+        ]
+      },
+      "strong": {
+        "es": [
+          "Cobertura especial enorme (Dragón/Siniestro/Tierra).",
+          "Inmune a Tierra: entra gratis contra Terremotos."
+        ],
+        "en": [
+          "Huge special coverage (Dragon/Dark/Ground).",
+          "Ground-immune: switches in free vs Earthquakes."
+        ]
+      },
+      "weak": {
+        "es": [
+          "Débil a Hada, Hielo, Bicho y Dragón.",
+          "El Pañuelo te encierra: cuidado al elegir movimiento."
+        ],
+        "en": [
+          "Weak to Fairy, Ice, Bug and Dragon.",
+          "The Scarf locks you: choose your move carefully."
+        ]
+      },
+      "vs": [
+        {
+          "n": "Garchomp",
+          "ok": true,
+          "t": {
+            "es": "Con Pañuelo lo superas; Cometa Draco lo revienta.",
+            "en": "With Scarf you outspeed; Draco Meteor blasts it."
+          }
+        },
+        {
+          "n": "Sylveon",
+          "ok": false,
+          "t": {
+            "es": "Su Hada te mata: pivotea, no te quedes.",
+            "en": "Its Fairy KOs you: pivot, don't stay in."
+          }
+        }
+      ],
+      "note": {
+        "es": "Revienta-rápidos especial inmune a Tierra. Sinergiza con Metagross e Incineroar.",
+        "en": "Ground-immune special revenge-killer. Synergizes with Metagross and Incineroar."
+      }
     }
   ],
   "system": {
@@ -1840,7 +3341,7 @@
         "name": "Scovillain",
         "sprite": 952,
         "priority": "baja",
-        "have": false,
+        "have": true,
         "why": {
           "es": "Con Mega nueva (Rocío Picante). Opción de sol/ofensiva a vigilar.",
           "en": "Has a new Mega. A sun/offense option to watch."
@@ -2166,8 +3667,8 @@
           {
             "name": "Scovillain",
             "sprite": 952,
-            "have": false,
-            "hunt": true
+            "have": true,
+            "hunt": false
           }
         ]
       }
@@ -2424,6 +3925,204 @@
         ]
       ]
     }
+  },
+  "cleanup": {
+    "intro": {
+      "es": "Con Mawile, Staraptor y Scovillain dentro, así queda tu caja. Liberar es a HOME y es REVERSIBLE: recupera hueco sin perder nada.",
+      "en": "With Mawile, Staraptor and Scovillain in, here's your box. Releasing goes to HOME and is REVERSIBLE: reclaim space without losing anything."
+    },
+    "promote": [
+      {
+        "name": "Mawile (Mega)",
+        "sprite": 10052,
+        "reason": {
+          "es": "Súbela a núcleo: pieza básica del meta, forma el núcleo seguro con Gholdengo.",
+          "en": "Promote to core: meta staple, forms the safe core with Gholdengo."
+        }
+      },
+      {
+        "name": "Staraptor (Mega)",
+        "sprite": 398,
+        "reason": {
+          "es": "Ahora viable con Buscabroncas: atacante-fortaleza. Merece un hueco.",
+          "en": "Now viable with Contrary: attacker-fortress. Earns a slot."
+        }
+      },
+      {
+        "name": "Scovillain (Mega)",
+        "sprite": 952,
+        "reason": {
+          "es": "Soporte de Trick Room: redirige y quema. Úsalo con Mawile/Farigiraf.",
+          "en": "Trick Room support: redirects and burns. Use with Mawile/Farigiraf."
+        }
+      }
+    ],
+    "keep": [
+      {
+        "name": "Venusaur (Mega)",
+        "sprite": 10033,
+        "reason": {
+          "es": "Núcleo del equipo de Sol (Clorofila + Somnífero).",
+          "en": "Core of the Sun team (Chlorophyll + Sleep Powder)."
+        }
+      },
+      {
+        "name": "Torkoal",
+        "sprite": 324,
+        "reason": {
+          "es": "Habilitador de Sol/Trick Room: pega durísimo con Mega Mawile en TR.",
+          "en": "Sun/Trick Room enabler: hits hard with Mega Mawile in TR."
+        }
+      },
+      {
+        "name": "Sableye (Mega)",
+        "sprite": 10066,
+        "reason": {
+          "es": "Tech de Trick Room: Espejo Mágico anula estados y hazards.",
+          "en": "Trick Room tech: Magic Bounce nullifies status and hazards."
+        }
+      },
+      {
+        "name": "Dragonite",
+        "sprite": 149,
+        "reason": {
+          "es": "Setup + prioridad con Multiescamas. Flexible en varios equipos.",
+          "en": "Setup + priority with Multiscale. Flexible across teams."
+        }
+      },
+      {
+        "name": "Glimmora",
+        "sprite": 970,
+        "reason": {
+          "es": "Hazards + Banda Focus: útil como lead en Singles HO.",
+          "en": "Hazards + Focus Sash: useful lead in Singles HO."
+        }
+      },
+      {
+        "name": "Annihilape",
+        "sprite": 979,
+        "reason": {
+          "es": "Fuerte en Singles (Cólera Poder acumula daño).",
+          "en": "Strong in Singles (Rage Fist stacks damage)."
+        }
+      },
+      {
+        "name": "Aegislash",
+        "sprite": 681,
+        "reason": {
+          "es": "Pivote defensivo con Cambio de Banda en Singles.",
+          "en": "Defensive King's Shield pivot in Singles."
+        }
+      },
+      {
+        "name": "Tyranitar",
+        "sprite": 248,
+        "reason": {
+          "es": "Mantener SOLO si montas arena; si no, candidato a liberar.",
+          "en": "Keep ONLY if you build sand; otherwise a release candidate."
+        }
+      }
+    ],
+    "release": [
+      {
+        "name": "Rotom-Heat",
+        "sprite": 10008,
+        "reason": {
+          "es": "Redundante con Rotom-Wash, que es mejor defensivamente.",
+          "en": "Redundant with Rotom-Wash, which is defensively better."
+        }
+      },
+      {
+        "name": "Starmie",
+        "sprite": 121,
+        "reason": {
+          "es": "Superado como atacante especial; sin hueco en tus equipos.",
+          "en": "Outclassed special attacker; no slot in your teams."
+        }
+      },
+      {
+        "name": "Raichu (Mega)",
+        "sprite": 26,
+        "reason": {
+          "es": "Nicho anti-lluvia débil; Rotom-Wash cumple mejor ese rol.",
+          "en": "Weak anti-rain niche; Rotom-Wash does that role better."
+        }
+      },
+      {
+        "name": "Ninetales-Alola",
+        "sprite": 10104,
+        "reason": {
+          "es": "Requiere equipo de nieve que no juegas.",
+          "en": "Requires a snow team you don't run."
+        }
+      },
+      {
+        "name": "Kangaskhan (Mega)",
+        "sprite": 10039,
+        "reason": {
+          "es": "Compite por hueco Mega con opciones mejores (Metagross, Mawile, Charizard).",
+          "en": "Competes for a Mega slot with better options (Metagross, Mawile, Charizard)."
+        }
+      },
+      {
+        "name": "Milotic",
+        "sprite": 350,
+        "reason": {
+          "es": "Muro de agua correcto pero fuera de tus 3 arquetipos; libera si necesitas hueco.",
+          "en": "Fine Water wall but outside your 3 archetypes; release if you need space."
+        }
+      },
+      {
+        "name": "Sceptile",
+        "sprite": 254,
+        "reason": {
+          "es": "Fuera del meta; superado por otros sweepers de Hierba.",
+          "en": "Off-meta; outclassed by other Grass sweepers."
+        }
+      },
+      {
+        "name": "Eelektross",
+        "sprite": 604,
+        "reason": {
+          "es": "Sin usos; lento y sin Mega.",
+          "en": "No usage; slow and no Mega."
+        }
+      },
+      {
+        "name": "Samurott",
+        "sprite": 503,
+        "reason": {
+          "es": "El bueno es el de Hisui (no lo tienes). El normal no rankea.",
+          "en": "The good one is Hisuian (you don't have it). Base doesn't rank."
+        }
+      }
+    ],
+    "maybe": [
+      {
+        "name": "Greninja",
+        "sprite": 658,
+        "reason": {
+          "es": "Ofensivo frágil con nicho: mantén si lo usas, libera si no.",
+          "en": "Frail offense with a niche: keep if you use it, release if not."
+        }
+      },
+      {
+        "name": "Volcarona",
+        "sprite": 637,
+        "reason": {
+          "es": "Sweeper de Danza Aleteo; nicho de Singles. Opcional.",
+          "en": "Quiver Dance sweeper; Singles niche. Optional."
+        }
+      },
+      {
+        "name": "Gyarados (Mega)",
+        "sprite": 10041,
+        "reason": {
+          "es": "Intimidación + setup, pero compite por hueco Mega. Opcional.",
+          "en": "Intimidate + setup, but competes for a Mega slot. Optional."
+        }
+      }
+    ]
   },
   "sources": [
     {

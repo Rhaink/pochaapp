@@ -31,6 +31,7 @@ export const UI = {
     home: { es: 'Inicio', en: 'Home' },
     meta: { es: 'Meta', en: 'Meta' },
     roster: { es: 'Roster', en: 'Roster' },
+    cleanup: { es: 'Depurar', en: 'Cleanup' },
     teams: { es: 'Equipos', en: 'Teams' },
     builds: { es: 'Builds', en: 'Builds' },
     tierlist: { es: 'Top 40', en: 'Top 40' },
