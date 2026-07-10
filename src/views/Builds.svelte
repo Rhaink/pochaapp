@@ -31,7 +31,7 @@
 </div>
 
 <div class="builds">
-  {#each shown as b (b.name + (b.form || ''))}
+  {#each shown as b (b.group + ':' + b.name + (b.form || ''))}
     <article class="build card" style="--gc:{groupColor[b.group]}">
       <header class="b-head">
         <div class="b-sprite"><Sprite id={b.sprite} size={64} alt={b.name} bob /></div>
