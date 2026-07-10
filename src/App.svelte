@@ -9,6 +9,7 @@
   import Roster from './views/Roster.svelte';
   import Cleanup from './views/Cleanup.svelte';
   import Teams from './views/Teams.svelte';
+  import Strategy from './views/Strategy.svelte';
   import Builds from './views/Builds.svelte';
   import TierList from './views/TierList.svelte';
   import Recruit from './views/Recruit.svelte';
@@ -18,12 +19,12 @@
   import Plan from './views/Plan.svelte';
   import SearchOverlay from './views/SearchOverlay.svelte';
 
-  const views = { home: Home, meta: Meta, roster: Roster, cleanup: Cleanup, teams: Teams, builds: Builds, tierlist: TierList, recruit: Recruit, climb: Climb, scout: Scout, system: System, plan: Plan };
+  const views = { home: Home, meta: Meta, roster: Roster, cleanup: Cleanup, teams: Teams, strategy: Strategy, builds: Builds, tierlist: TierList, recruit: Recruit, climb: Climb, scout: Scout, system: System, plan: Plan };
 
   // Destinos primarios (bottom bar en móvil). El resto vive en el sidebar / búsqueda.
-  const primary = ['home', 'meta', 'roster', 'teams', 'builds'];
-  const secondary = ['tierlist', 'cleanup', 'recruit', 'climb', 'scout', 'system', 'plan'];
-  const icons = { home: '◆', meta: '📊', roster: '📦', cleanup: '🧹', teams: '⚔️', builds: '🛠️', tierlist: '🏆', recruit: '🎯', climb: '📈', scout: '🔭', system: '⚙️', plan: '🗺️' };
+  const primary = ['home', 'meta', 'teams', 'strategy', 'builds'];
+  const secondary = ['roster', 'tierlist', 'cleanup', 'recruit', 'climb', 'scout', 'system', 'plan'];
+  const icons = { home: '◆', meta: '📊', roster: '📦', cleanup: '🧹', teams: '⚔️', strategy: '🧠', builds: '🛠️', tierlist: '🏆', recruit: '🎯', climb: '📈', scout: '🔭', system: '⚙️', plan: '🗺️' };
 
   let searchOpen = false;
 

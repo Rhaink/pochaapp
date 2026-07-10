@@ -6,12 +6,12 @@
   export let data;
   $: L = $lang;
 
-  // Espacios de equipo según rango: caja base 30 (+5 por tier, +10 en Máster).
-  // Para "espacios activos" usamos una regla simple: 3 base, +1 por cada tier
-  // por encima de Great Ball (así el usuario ve crecer sus opciones al subir).
+  // Espacios de equipo: son 3 fijos (1 Singles + 2 Dobles). Lo que crece con el
+  // rango es la CAJA (almacenamiento), no los espacios. El resto de variantes se
+  // guardan gratis como Códigos de Equipo Réplica.
   const tiers = data.system.ranking.tiers;
   $: tierName = tiers[$rank.tier] || tiers[1];
-  $: slots = Math.min(6, 3 + Math.max(0, $rank.tier - 2));
+  const slots = 3;
 
   $: doubleFill = $session.streak >= 3;
 
@@ -58,7 +58,7 @@
       <div class="slotnum">{slots}</div>
       <div>
         <div class="slotlabel">{tt(UI.home.boxSlots, L)}</div>
-        <div class="slothint">{tierName}</div>
+        <div class="slothint">{L === 'es' ? '1 Singles + 2 Dobles · guarda variantes como Réplica' : '1 Singles + 2 Doubles · save variants as Replica'}</div>
       </div>
     </div>
   </div>

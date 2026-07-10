@@ -11,7 +11,8 @@
   $: groups = ['all', ...Object.keys(data.buildGroups)];
   $: shown = group === 'all' ? data.builds : data.builds.filter((b) => b.group === group);
 
-  const groupColor = { singles: 'var(--cyan)', sun: 'var(--gold)', rain: 'var(--blue)', trickroom: 'var(--violet)', extra: 'var(--green)' };
+  const groupColor = { t1: 'var(--cyan)', t2: 'var(--gold)', t3: 'var(--blue)', extra: 'var(--violet)' };
+  const isTeam = (g) => g === 't1' || g === 't2' || g === 't3';
 
   function groupLabel(g) {
     return g === 'all' ? (L === 'es' ? 'Todos' : 'All') : tt(data.buildGroups[g], L);
@@ -27,9 +28,15 @@
 <div class="filters">
   {#each groups as g}
     <button class="fbtn" class:on={group === g} on:click={() => (group = g)}
-      style={g !== 'all' ? `--gc:${groupColor[g]}` : ''}>{groupLabel(g)}</button>
+      style={g !== 'all' ? `--gc:${groupColor[g] || 'var(--cyan)'}` : ''}>{groupLabel(g)}</button>
   {/each}
 </div>
+
+{#if isTeam(group)}
+  <div class="team-note" style="--gc:{groupColor[group]}">
+    ✓ {L === 'es' ? 'Equipo completo: 6 Pokémon, cada uno con objeto distinto (Item Clause).' : 'Complete team: 6 Pokémon, each with a distinct item (Item Clause).'}
+  </div>
+{/if}
 
 <div class="builds">
   {#each shown as b (key(b))}
@@ -112,6 +119,17 @@
         </div>
       {/if}
 
+      {#if b.why}
+        <div class="b-block why">
+          <span class="k">{L === 'es' ? 'Por qué esta build' : 'Why this build'}</span>
+          <ul class="whys">
+            <li><b>{tt(UI.labels.item, L)}:</b> {tt(b.why.item, L)}</li>
+            <li><b>{tt(UI.labels.moves, L)}:</b> {tt(b.why.moves, L)}</li>
+            <li><b>{tt(UI.labels.spread, L)} / {tt(UI.labels.nature, L)}:</b> {tt(b.why.spread, L)}</li>
+          </ul>
+        </div>
+      {/if}
+
       {#if b.note}<p class="note"><span class="bulb">💡</span>{tt(b.note, L)}</p>{/if}
     </article>
   {/each}
@@ -169,8 +187,14 @@
   .vname { font-weight: 700; }
   .vtip { color: var(--muted); line-height: 1.4; }
 
+  .why .whys { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+  .why .whys li { font-size: 12px; line-height: 1.45; color: var(--muted); }
+  .why .whys b { color: var(--text); font-weight: 700; }
+
   .note { display: flex; gap: 8px; color: var(--muted); font-size: 12.5px; line-height: 1.5; margin: 0; background: var(--surface-2); border-radius: var(--r-sm); padding: 11px 12px; }
   .bulb { flex: 0 0 auto; }
+
+  .team-note { margin: -6px 0 16px; padding: 10px 14px; border-radius: var(--r-sm); font-size: 13px; font-weight: 600; color: var(--text); background: color-mix(in srgb, var(--gc) 12%, transparent); border: 1px solid color-mix(in srgb, var(--gc) 35%, transparent); }
 
   @media (max-width: 520px) {
     .builds { grid-template-columns: 1fr; }

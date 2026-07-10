@@ -33,6 +33,7 @@ export const UI = {
     roster: { es: 'Roster', en: 'Roster' },
     cleanup: { es: 'Depurar', en: 'Cleanup' },
     teams: { es: 'Equipos', en: 'Teams' },
+    strategy: { es: 'Estrategia', en: 'Strategy' },
     builds: { es: 'Builds', en: 'Builds' },
     tierlist: { es: 'Top 40', en: 'Top 40' },
     recruit: { es: 'Sinistcha', en: 'Sinistcha' },
