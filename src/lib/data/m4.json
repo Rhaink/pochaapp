@@ -26,35 +26,50 @@
         "sprite": 445,
         "usage": 38.4,
         "item": "Vidasfera · Life Orb",
-        "note": "#1 uso global"
+        "note": {
+          "es": "#1 uso global",
+          "en": "#1 global usage"
+        }
       },
       {
         "name": "Sinistcha",
         "sprite": 1013,
         "usage": 32.1,
         "item": "Baya Zonora · Kasib Berry",
-        "note": "Nº1 de soporte en Dobles"
+        "note": {
+          "es": "Nº1 de soporte en Dobles",
+          "en": "#1 Doubles support"
+        }
       },
       {
         "name": "Basculegion",
         "sprite": 902,
         "usage": 31.6,
         "item": "Pañuelo Elección · Choice Scarf",
-        "note": "Last Respects"
+        "note": {
+          "es": "Last Respects",
+          "en": "Last Respects nuke"
+        }
       },
       {
         "name": "Incineroar",
         "sprite": 727,
         "usage": 30.9,
         "item": "Baya Zidra · Sitrus Berry",
-        "note": "Mejor todoterreno"
+        "note": {
+          "es": "Mejor todoterreno",
+          "en": "Best all-rounder"
+        }
       },
       {
         "name": "Kingambit",
         "sprite": 983,
         "usage": 28.1,
         "item": "Gafas de Sol · Black Glasses",
-        "note": "Eje del meta"
+        "note": {
+          "es": "Eje del meta",
+          "en": "Meta anchor"
+        }
       }
     ],
     "singlesTop": [
@@ -200,7 +215,7 @@
     "newMegas": [
       {
         "text": {
-          "es": "Mega Staraptor · habilidad Buscabroncas (Contrary): pico ofensivo nuevo muy fuerte.",
+          "es": "Mega Staraptor · habilidad Respondón (Contrary): pico ofensivo nuevo muy fuerte.",
           "en": "Mega Staraptor · Contrary ability: strong new offensive threat."
         },
         "flag": true
@@ -469,13 +484,12 @@
     },
     {
       "name": "Venusaur",
-      "form": "Mega",
       "dex": 3,
-      "sprite": 10033,
+      "sprite": 3,
       "status": "situational",
       "tag": {
-        "es": "Sol",
-        "en": "Sun"
+        "es": "Sol · Clorofila",
+        "en": "Sun · Chlorophyll"
       }
     },
     {
@@ -570,7 +584,7 @@
       },
       "isNew": true,
       "reason": {
-        "es": "Mega con Buscabroncas: A Bocajarro sube defensas mientras pega. Pico ofensivo del meta.",
+        "es": "Mega con Respondón: A Bocajarro sube defensas mientras pega. Pico ofensivo del meta.",
         "en": "Mega with Contrary: Close Combat boosts defenses while attacking. Meta threat."
       }
     },
@@ -813,7 +827,7 @@
         727,
         445,
         700,
-        10033,
+        3,
         10009
       ],
       "strat": {
@@ -1624,8 +1638,7 @@
     {
       "group": "t2",
       "name": "Venusaur",
-      "form": "Mega",
-      "sprite": 10033,
+      "sprite": 3,
       "own": true,
       "item": "Banda Focus · Focus Sash",
       "ability": "Clorofila · Chlorophyll",
@@ -1692,13 +1705,13 @@
         }
       ],
       "note": {
-        "es": "Bajo sol dobla velocidad con Clorofila. Somnífero desactiva amenazas.",
-        "en": "Doubles Speed under sun via Chlorophyll. Sleep Powder disables threats."
+        "es": "OJO: es Venusaur NORMAL (no Mega): la Mega tiene Grueso, no Clorofila. Bajo sol, Clorofila dobla su velocidad.",
+        "en": "NOTE: it's REGULAR Venusaur (not Mega): the Mega has Thick Fat, not Chlorophyll. Under sun, Chlorophyll doubles its Speed."
       },
       "why": {
         "item": {
-          "es": "Banda Focus para garantizar el turno de Somnífero aunque te centren.",
-          "en": "Focus Sash to guarantee the Sleep Powder turn even if you get focused."
+          "es": "Banda Focus (no lleva Mega Piedra a propósito: la Mega perdería la Clorofila y el equipo ya megaevoluciona a Charizard).",
+          "en": "Focus Sash (no Mega Stone on purpose: the Mega would lose Chlorophyll and the team already megas Charizard)."
         },
         "moves": {
           "es": "Somnífero desactiva una amenaza; Bomba Lodo/Energibola cubren Hada/Agua; Protección posiciona.",
@@ -2249,7 +2262,7 @@
       "nature": "Modesta · Modest",
       "spread": "PS 32 / At. Esp. 32 / Defensa 2",
       "moves": [
-        "Electro Shot · Electro Shot",
+        "Electrocañón · Electro Shot",
         "Foco Resplandor · Flash Cannon",
         "Pulso Dragón · Dragon Pulse",
         "Protección · Protect"
@@ -2338,7 +2351,7 @@
       "spread": "Ataque 32 / Velocidad 32 / PS 2",
       "moves": [
         "Hidroariete · Wave Crash",
-        "Last Respects · Last Respects",
+        "Última Baza · Last Respects",
         "Acua Jet · Aqua Jet",
         "Ida y Vuelta · Flip Turn"
       ],
@@ -2603,7 +2616,7 @@
         "en": "NEW piece you now own: Mega Mawile is an M-B staple. Promote it to your core."
       },
       "item": "Mawilita · Mawilite",
-      "ability": "Fuerza Bruta→Fuerza Colosal · Intimidate→Huge Power",
+      "ability": "Intimidación→Fuerza Colosal · Intimidate→Huge Power",
       "nature": "Firme · Adamant",
       "spread": "Ataque 32 / PS 32 / Defensa 2",
       "moves": [
@@ -3063,7 +3076,7 @@
       "sprite": 10042,
       "own": true,
       "item": "Aerodactylita · Aerodactylite",
-      "ability": "Fuerza Bruta · Tough Claws",
+      "ability": "Nerviosismo→Zarpas Duras · Unnerve→Tough Claws",
       "nature": "Alegre · Jolly",
       "spread": "Ataque 32 / Velocidad 32 / PS 2",
       "moves": [
@@ -3151,30 +3164,30 @@
       "form": "Mega",
       "sprite": 10066,
       "own": true,
-      "item": "Refleluz · Light Clay",
+      "item": "Sableyita · Sablenite",
       "ability": "Bromista→Espejo Mágico · Prankster→Magic Bounce",
       "nature": "Osada · Bold",
       "spread": "PS 32 / Defensa 32 / Def. Esp. 2",
       "moves": [
         "Fuego Fatuo · Will-O-Wisp",
-        "Reflejo · Reflect",
+        "Juego Sucio · Foul Play",
         "Otra Vez · Encore",
-        "Juego Sucio · Foul Play"
+        "Recuperación · Recover"
       ],
       "role": {
-        "es": "Soporte tramposo anti-setup y anti-hazards.",
-        "en": "Tricky support: anti-setup and anti-hazards."
+        "es": "Muro tramposo con Espejo Mágico: rebota estados y hazards.",
+        "en": "Tricky Magic Bounce wall: reflects status and hazards."
       },
       "strategy": {
         "es": [
-          "Antes de megaevolucionar, usa Bromista para pantallas o Fuego Fatuo con prioridad.",
-          "Ya Mega, Espejo Mágico rebota estados y hazards: entra contra Grimmsnarl y Hippowdon.",
-          "Otra Vez encierra al rival en un movimiento de apoyo y abre el turno a tu aliado."
+          "Turno 1, con Bromista aún activo, usa Fuego Fatuo u Otra Vez con prioridad.",
+          "Megaevoluciona (necesita su Piedra, por eso NO lleva Refleluz): Espejo Mágico rebota Trampa Rocas, quemas, Provocación y polvos.",
+          "Recuperación lo mantiene vivo como muro; Juego Sucio castiga a los físicos con su propio ataque."
         ],
         "en": [
-          "Before mega, use Prankster for priority screens or Will-O-Wisp.",
-          "Once mega, Magic Bounce reflects status and hazards: switch into Grimmsnarl and Hippowdon.",
-          "Encore locks the foe into a support move and opens the turn for your ally."
+          "Turn 1, while Prankster is still active, use Will-O-Wisp or Encore with priority.",
+          "Mega-evolve (needs its Stone, that's why it does NOT hold Light Clay): Magic Bounce reflects Stealth Rock, burns, Taunt and powders.",
+          "Recover keeps it alive as a wall; Foul Play punishes physicals with their own Attack."
         ]
       },
       "strong": {
@@ -3216,21 +3229,21 @@
         }
       ],
       "note": {
-        "es": "Antes de Megaevolucionar pone pantallas con prioridad; ya Mega, rebota estados.",
-        "en": "Before mega it sets priority screens; once mega, it bounces status."
+        "es": "Necesita la Piedra Sableye para Megaevolucionar. Ya Mega, Espejo Mágico anula estados y hazards.",
+        "en": "Needs Sablenite to Mega-evolve. Once Mega, Magic Bounce nullifies status and hazards."
       },
       "why": {
         "item": {
-          "es": "Refleluz: si abre con pantallas antes de megaevolucionar, quieres que duren 8 turnos.",
-          "en": "Light Clay: if it opens with screens before mega, you want them to last 8 turns."
+          "es": "Sableyita es OBLIGATORIA para megaevolucionar: sin ella no accede a Espejo Mágico. (Antes tenía Refleluz por error: incompatible con la Mega.)",
+          "en": "Sablenite is REQUIRED to Mega-evolve: without it there's no Magic Bounce. (It wrongly held Light Clay before: incompatible with the Mega.)"
         },
         "moves": {
-          "es": "Fuego Fatuo quema; Reflejo da defensa; Otra Vez encierra; Juego Sucio castiga físicos.",
-          "en": "Will-O-Wisp burns; Reflect adds defense; Encore locks; Foul Play punishes physicals."
+          "es": "Fuego Fatuo quema físicos; Otra Vez encierra; Juego Sucio castiga con el ataque rival; Recuperación da longevidad.",
+          "en": "Will-O-Wisp burns physicals; Encore locks; Foul Play punishes with the foe's Attack; Recover gives longevity."
         },
         "spread": {
-          "es": "PS y Defensa (Osada): es puro soporte defensivo; Espejo Mágico (ya Mega) rebota estados.",
-          "en": "HP and Defense (Bold): pure defensive support; Magic Bounce (once Mega) reflects status."
+          "es": "PS y Defensa (Osada): es un muro puro; Espejo Mágico y Recuperación hacen el trabajo, no el ataque.",
+          "en": "HP and Defense (Bold): pure wall; Magic Bounce and Recover do the work, not offense."
         }
       }
     },
@@ -3242,11 +3255,11 @@
       "own": true,
       "fresh": true,
       "freshNote": {
-        "es": "NUEVA pieza que ya tienes: Mega Staraptor con Buscabroncas es un pico ofensivo del meta M-B.",
+        "es": "NUEVA pieza que ya tienes: Mega Staraptor con Respondón es un pico ofensivo del meta M-B.",
         "en": "NEW piece you now own: Mega Staraptor with Contrary is an M-B offensive threat."
       },
       "item": "Staraptorita · Staraptorite",
-      "ability": "Buscabroncas · Contrary",
+      "ability": "Intimidación→Respondón · Intimidate→Contrary",
       "nature": "Firme · Adamant",
       "spread": "Ataque 32 / Velocidad 32 / PS 2",
       "moves": [
@@ -3261,7 +3274,7 @@
       },
       "strategy": {
         "es": [
-          "A Bocajarro normalmente baja tu defensa; con Buscabroncas la SUBE: pegas y te fortaleces a la vez.",
+          "A Bocajarro normalmente baja tu defensa; con Respondón la SUBE: pegas y te fortaleces a la vez.",
           "Encadena A Bocajarro: cada uso te vuelve más tanque mientras castigas.",
           "Respiro te cura para seguir en el campo como fortaleza ofensiva."
         ],
@@ -3273,7 +3286,7 @@
       },
       "strong": {
         "es": [
-          "Buscabroncas convierte A Bocajarro en setup ofensivo Y defensivo.",
+          "Respondón convierte A Bocajarro en setup ofensivo Y defensivo.",
           "Respiro lo sostiene: difícil de tumbar tras 2-3 golpes."
         ],
         "en": [
@@ -3310,16 +3323,16 @@
         }
       ],
       "note": {
-        "es": "Buscabroncas invierte las bajadas de A Bocajarro en subidas: atacas y te fortaleces.",
+        "es": "Respondón invierte las bajadas de A Bocajarro en subidas: atacas y te fortaleces.",
         "en": "Contrary flips Close Combat's drops into boosts: you attack and get tankier."
       },
       "why": {
         "item": {
-          "es": "Staraptorita: la Mega es lo que habilita Buscabroncas, el núcleo de todo el set.",
+          "es": "Staraptorita: la Mega es lo que habilita Respondón, el núcleo de todo el set.",
           "en": "Staraptorite: the Mega is what enables Contrary, the core of the whole set."
         },
         "moves": {
-          "es": "A Bocajarro SUBE tus defensas con Buscabroncas; Pájaro Osado = STAB; Respiro sostiene; Protección.",
+          "es": "A Bocajarro SUBE tus defensas con Respondón; Pájaro Osado = STAB; Respiro sostiene; Protección.",
           "en": "Close Combat RAISES your defenses via Contrary; Brave Bird = STAB; Roost sustains; Protect."
         },
         "spread": {
@@ -3837,22 +3850,36 @@
   },
   "shopping": {
     "megaStones": [
-      "Charizardita Y",
-      "Metagrossita",
-      "Swampertita",
-      "Aerodactylita"
+      "Charizardita Y · Charizardite Y",
+      "Metagrossita · Metagrossite",
+      "Swampertita · Swampertite",
+      "Aerodactylita · Aerodactylite",
+      "Mawilita · Mawilite",
+      "Staraptorita · Staraptorite",
+      "Scovillainita · Scovillainite",
+      "Sableyita · Sablenite"
     ],
     "items": [
-      "Banda Focus",
-      "Pañuelo Elección",
-      "Vidasfera",
-      "Baya Zidra",
-      "Pluma Hada",
-      "Refleluz (Light Clay)",
-      "Piedra Lluvia (Damp Rock)",
-      "Agua Mística",
-      "Restos",
-      "Lupa (Wide Lens)"
+      "Banda Focus · Focus Sash",
+      "Pañuelo Elección · Choice Scarf",
+      "Vidasfera · Life Orb",
+      "Baya Zidra · Sitrus Berry",
+      "Pluma Hada · Fairy Feather",
+      "Refleluz · Light Clay",
+      "Piedra Lluvia · Damp Rock",
+      "Agua Mística · Mystic Water",
+      "Restos · Leftovers",
+      "Lupa · Wide Lens",
+      "Casco Dentado · Rocky Helmet",
+      "Gafas Protectoras · Safety Goggles",
+      "Gafas de Sol · Black Glasses",
+      "Baya Ziuela · Lum Berry",
+      "Revestimiento Metálico · Metal Coat",
+      "Baya Chiri · Colbur Berry",
+      "Hierba Blanca · White Herb",
+      "Carbón · Charcoal",
+      "Baya Zonora · Kasib Berry",
+      "Gyaradosita · Gyaradosite"
     ]
   },
   "scout": {
@@ -3887,7 +3914,7 @@
         "priority": "media",
         "have": true,
         "why": {
-          "es": "Mega nueva con Buscabroncas (Contrary): A Bocajarro y Pájaro Osado sin bajadas. Pico ofensivo emergente.",
+          "es": "Mega nueva con Respondón (Contrary): A Bocajarro y Pájaro Osado sin bajadas. Pico ofensivo emergente.",
           "en": "New mega with Contrary: Close Combat and Brave Bird without drops. Emerging offensive threat."
         }
       },
@@ -4146,7 +4173,7 @@
         "mons": [
           {
             "name": "Venusaur",
-            "sprite": 10033,
+            "sprite": 3,
             "have": true,
             "hunt": false
           },
@@ -4508,7 +4535,7 @@
         "name": "Staraptor (Mega)",
         "sprite": 398,
         "reason": {
-          "es": "Ahora viable con Buscabroncas: atacante-fortaleza. Merece un hueco.",
+          "es": "Ahora viable con Respondón: atacante-fortaleza. Merece un hueco.",
           "en": "Now viable with Contrary: attacker-fortress. Earns a slot."
         }
       },
@@ -4971,8 +4998,8 @@
             }
           },
           {
-            "name": "Venusaur (Mega)",
-            "sprite": 10033,
+            "name": "Venusaur",
+            "sprite": 3,
             "role": {
               "es": "Barredor de cierre. Clorofila dobla su velocidad; Somnífero desactiva amenazas.",
               "en": "Closing sweeper. Chlorophyll doubles Speed; Sleep Powder disables threats."
