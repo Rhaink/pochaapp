@@ -1,0 +1,304 @@
+{
+  "season": {
+    "code": "M-4",
+    "regulation": "M-B",
+    "startsMobile": "2026-06-17",
+    "seasonWindow": "2026-07-08 → 2026-08-05",
+    "regulationWindow": "2026-06-17 → 2026-08-26",
+    "rosterSize": 319,
+    "rosterBreakdown": { "regular": 242, "mega": 77 },
+    "note": {
+      "es": "«M-B» es la REGULACIÓN (qué Pokémon y objetos están permitidos). «M-4» es la TEMPORADA (el ciclo de ranked que reinicia). Ahora juegas la Temporada M-4 dentro de Regulation M-B.",
+      "en": "\"M-B\" is the REGULATION (which Pokémon/items are legal). \"M-4\" is the SEASON (the ranked cycle that resets). You're playing Season M-4 within Regulation M-B."
+    }
+  },
+
+  "meta": {
+    "summary": {
+      "es": "Meta equilibrado, sin tier SS, centrado en Kingambit. Incineroar es el mejor todoterreno. Núcleo seguro emergente: Gholdengo + Mega Mawile.",
+      "en": "Balanced meta, no SS tier, centered on Kingambit. Incineroar is the best all-rounder. Emerging safe core: Gholdengo + Mega Mawile."
+    },
+    "usage": [
+      { "name": "Garchomp", "sprite": 445, "usage": 38.4, "item": "Vidasfera · Life Orb", "note": "#1 uso global" },
+      { "name": "Sinistcha", "sprite": 1013, "usage": 32.1, "item": "Baya Zonora · Kasib Berry", "note": "Nº1 de soporte en Dobles" },
+      { "name": "Basculegion", "sprite": 902, "usage": 31.6, "item": "Pañuelo Elección · Choice Scarf", "note": "Last Respects" },
+      { "name": "Incineroar", "sprite": 727, "usage": 30.9, "item": "Baya Zidra · Sitrus Berry", "note": "Mejor todoterreno" },
+      { "name": "Kingambit", "sprite": 983, "usage": 28.1, "item": "Gafas de Sol · Black Glasses", "note": "Eje del meta" }
+    ],
+    "singlesTop": [
+      { "name": "Garchomp", "sprite": 445, "rank": 1 },
+      { "name": "Mimikyu", "sprite": 778, "rank": 2 },
+      { "name": "Archaludon", "sprite": 1018, "rank": 3 },
+      { "name": "Metagross", "sprite": 10076, "rank": 4 },
+      { "name": "Hippowdon", "sprite": 450, "rank": 5 }
+    ],
+    "doublesTop": [
+      { "name": "Garchomp", "sprite": 445, "rank": 1 },
+      { "name": "Sinistcha", "sprite": 1013, "rank": 2 },
+      { "name": "Basculegion", "sprite": 902, "rank": 3 },
+      { "name": "Whimsicott", "sprite": 547, "rank": 4 },
+      { "name": "Incineroar", "sprite": 727, "rank": 5 },
+      { "name": "Charizard-Y", "sprite": 10035, "rank": 6 }
+    ],
+    "archetypes": [
+      { "name": { "es": "Sol", "en": "Sun" }, "sprite": 10035 },
+      { "name": { "es": "Lluvia", "en": "Rain" }, "sprite": 279 },
+      { "name": { "es": "Viento Afín / HO", "en": "Tailwind / HO" }, "sprite": 547 },
+      { "name": { "es": "Doble Mega", "en": "Double Mega" }, "sprite": 10076 },
+      { "name": { "es": "Trick Room", "en": "Trick Room" }, "sprite": 1013 },
+      { "name": { "es": "Balance", "en": "Balance" }, "sprite": 983 }
+    ],
+    "changes": [
+      { "dir": "up", "text": { "es": "Sinistcha subió a nº1 de soporte en Dobles.", "en": "Sinistcha rose to #1 support in Doubles." } },
+      { "dir": "up", "text": { "es": "Mega Mawile ahora es pieza básica: forma el núcleo seguro con Gholdengo.", "en": "Mega Mawile is now a staple: forms the safe core with Gholdengo." } },
+      { "dir": "up", "text": { "es": "Whimsicott = mejor control de velocidad del formato.", "en": "Whimsicott = best speed control in the format." } },
+      { "dir": "down", "text": { "es": "Basculegion bajó desde el nº1 de M-A (sigue top).", "en": "Basculegion dropped from M-A's #1 (still top)." } },
+      { "dir": "down", "text": { "es": "Nerf a Metagross (perdió Machacar/Desarme) y a Lluvia Dorada de Gholdengo.", "en": "Nerf to Metagross (lost moves) and to Gholdengo's Make It Rain." } }
+    ],
+    "newMegas": [
+      { "text": { "es": "Mega Staraptor · habilidad Buscabroncas (Contrary): pico ofensivo nuevo muy fuerte.", "en": "Mega Staraptor · Contrary ability: strong new offensive threat." }, "flag": true },
+      { "text": { "es": "Mega Meganium (Mega Sol), Mega Emboar (Rompemoldes), Mega Feraligatr (Dragoniza).", "en": "Mega Meganium (Sun), Mega Emboar (Mold Breaker), Mega Feraligatr (Dragon-ize)." } },
+      { "text": { "es": "Mega Scovillain, Mega Golurk, Mega Chandelure, Mega Raichu X/Y (evento móvil).", "en": "Mega Scovillain, Mega Golurk, Mega Chandelure, Mega Raichu X/Y (mobile event)." } }
+    ],
+    "newItems": [
+      "Vidasfera · Life Orb",
+      "Lupa · Wide Lens",
+      "Refleluz · Light Clay"
+    ],
+    "disclaimer": {
+      "es": "Uso/winrates son datos comunitarios (ChampDex, PokéChamp DB, Pikalytics, op.gg), no cifras oficiales. El meta se mueve tras torneos.",
+      "en": "Usage/win rates are community data (ChampDex, PokéChamp DB, Pikalytics, op.gg), not official figures. The meta shifts after tournaments."
+    }
+  },
+
+  "roster": [
+    { "name": "Garchomp", "dex": 445, "sprite": 445, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Incineroar", "dex": 727, "sprite": 727, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Kingambit", "dex": 983, "sprite": 983, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Charizard", "form": "Mega Y", "dex": 6, "sprite": 10035, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Charizard", "form": "Mega X", "dex": 6, "sprite": 10034, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Sylveon", "dex": 700, "sprite": 700, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Basculegion", "dex": 902, "sprite": 902, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Whimsicott", "dex": 547, "sprite": 547, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Pelipper", "dex": 279, "sprite": 279, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Archaludon", "dex": 1018, "sprite": 1018, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Metagross", "form": "Mega", "dex": 376, "sprite": 10076, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Farigiraf", "dex": 981, "sprite": 981, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Swampert", "form": "Mega", "dex": 260, "sprite": 10064, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Sneasler", "dex": 903, "sprite": 903, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Mimikyu", "dex": 778, "sprite": 778, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Meowscarada", "dex": 908, "sprite": 908, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Hippowdon", "dex": 450, "sprite": 450, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Corviknight", "dex": 823, "sprite": 823, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Grimmsnarl", "dex": 861, "sprite": 861, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Gholdengo", "dex": 1000, "sprite": 1000, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Rotom-Wash", "dex": 479, "sprite": 10056, "status": "keep", "tag": { "es": "Núcleo", "en": "Core" } },
+    { "name": "Aerodactyl", "form": "Mega", "dex": 142, "sprite": 10042, "status": "keep", "isNew": true, "tag": { "es": "Núcleo · nuevo", "en": "Core · new" } },
+
+    { "name": "Venusaur", "form": "Mega", "dex": 3, "sprite": 10033, "status": "situational", "tag": { "es": "Sol", "en": "Sun" } },
+    { "name": "Torkoal", "dex": 324, "sprite": 324, "status": "situational", "tag": { "es": "Sol / TR", "en": "Sun / TR" } },
+    { "name": "Tyranitar", "dex": 248, "sprite": 248, "status": "situational", "tag": { "es": "Arena", "en": "Sand" } },
+    { "name": "Mawile", "form": "Mega", "dex": 303, "sprite": 10052, "status": "situational", "tag": { "es": "Anti-acero", "en": "Anti-steel" }, "flag": { "es": "Subir a núcleo: ahora es pieza básica del meta M-B (núcleo con Gholdengo).", "en": "Promote to core: now a staple of M-B (safe core with Gholdengo)." } },
+    { "name": "Milotic", "dex": 350, "sprite": 350, "status": "situational", "isNew": true, "tag": { "es": "Defensivo", "en": "Bulky" } },
+    { "name": "Sableye", "form": "Mega", "dex": 302, "sprite": 10066, "status": "situational", "isNew": true, "tag": { "es": "Prankster / TR", "en": "Prankster / TR" } },
+    { "name": "Greninja", "dex": 658, "sprite": 658, "status": "situational", "isNew": true, "tag": { "es": "Ofensivo", "en": "Offense" } },
+    { "name": "Ninetales-Alola", "dex": 38, "sprite": 10104, "status": "situational", "tag": { "es": "Nieve", "en": "Snow" } },
+    { "name": "Staraptor", "form": "Mega", "dex": 398, "sprite": 398, "status": "situational", "tag": { "es": "Viento Afín", "en": "Tailwind" }, "flag": { "es": "Reevaluar: Mega Staraptor con Buscabroncas (Contrary) es pico ofensivo nuevo del meta.", "en": "Reassess: Mega Staraptor with Contrary is a new offensive threat." } },
+    { "name": "Dragonite", "dex": 149, "sprite": 149, "status": "situational", "tag": { "es": "Setup", "en": "Setup" } },
+    { "name": "Volcarona", "dex": 637, "sprite": 637, "status": "situational", "tag": { "es": "Sweeper", "en": "Sweeper" } },
+    { "name": "Glimmora", "dex": 970, "sprite": 970, "status": "situational", "tag": { "es": "Hazards", "en": "Hazards" } },
+    { "name": "Kangaskhan", "form": "Mega", "dex": 115, "sprite": 10039, "status": "situational", "tag": { "es": "Ofensivo", "en": "Offense" } },
+    { "name": "Annihilape", "dex": 979, "sprite": 979, "status": "situational", "tag": { "es": "Singles", "en": "Singles" } },
+    { "name": "Aegislash", "dex": 681, "sprite": 681, "status": "situational", "tag": { "es": "Pivote", "en": "Pivot" } },
+    { "name": "Gyarados", "form": "Mega", "dex": 130, "sprite": 10041, "status": "situational", "tag": { "es": "Intimida", "en": "Intimidate" } },
+    { "name": "Starmie", "dex": 121, "sprite": 121, "status": "situational", "tag": { "es": "Singles", "en": "Singles" } },
+    { "name": "Raichu", "form": "Mega", "dex": 26, "sprite": 26, "status": "situational", "tag": { "es": "Anti-lluvia", "en": "Anti-rain" } },
+    { "name": "Rotom-Heat", "dex": 479, "sprite": 10057, "status": "situational", "tag": { "es": "Redundante", "en": "Redundant" } },
+
+    { "name": "Sceptile", "dex": 254, "sprite": 254, "status": "cut", "tag": { "es": "Fuera del meta", "en": "Off-meta" } },
+    { "name": "Eelektross", "dex": 604, "sprite": 604, "status": "cut", "tag": { "es": "Fuera del meta", "en": "Off-meta" } },
+    { "name": "Samurott", "dex": 503, "sprite": 503, "status": "cut", "tag": { "es": "Fuera del meta", "en": "Off-meta" } }
+  ],
+
+  "rosterLegend": {
+    "keep": { "es": "Conservar — núcleo tier S/A", "en": "Keep — S/A core" },
+    "situational": { "es": "Situacional — piezas de arquetipo", "en": "Situational — archetype pieces" },
+    "cut": { "es": "Liberar — devolver a HOME (reversible)", "en": "Cut — return to HOME (reversible)" },
+    "new": { "es": "Conseguidos recientemente", "en": "Recently obtained" }
+  },
+
+  "teams": [
+    {
+      "slot": 1,
+      "cls": "singles",
+      "name": { "es": "Balance ofensivo", "en": "Offensive Balance" },
+      "format": { "es": "Singles 3v3", "en": "Singles 3v3" },
+      "difficulty": { "es": "Fácil", "en": "Easy" },
+      "mons": [445, 10076, 908, 450, 823, 10056],
+      "strat": { "es": "Reemplaza a Raichu y Basculegion del equipo actual (Great Ball 2). Metagross rompe, Garchomp limpia, el resto aguanta y cicla.", "en": "Replaces Raichu and Basculegion from your current team. Metagross breaks, Garchomp cleans, the rest stalls and pivots." },
+      "tags": { "es": ["Consistente", "Bajo riesgo"], "en": ["Consistent", "Low risk"] }
+    },
+    {
+      "slot": 2,
+      "cls": "sun",
+      "name": { "es": "Sol ofensivo", "en": "Offensive Sun" },
+      "format": { "es": "Dobles", "en": "Doubles" },
+      "difficulty": { "es": "El más consistente", "en": "Most consistent" },
+      "mons": [10035, 727, 445, 700, 10033, 10056],
+      "strat": { "es": "Versión arreglada del sol: antes metías Kingambit/Sneasler que no aprovechan el sol y sin control de velocidad. Ahora Sylveon da la velocidad y el techo especial.", "en": "Fixed sun build: previously ran Pokémon that didn't use sun and lacked speed control. Sylveon now provides speed control and special ceiling." },
+      "tags": { "es": ["Ofensivo", "Recomendado"], "en": ["Offensive", "Recommended"] }
+    },
+    {
+      "slot": 3,
+      "cls": "rain",
+      "name": { "es": "Lluvia", "en": "Rain" },
+      "format": { "es": "Dobles", "en": "Doubles" },
+      "difficulty": { "es": "Techo alto", "en": "High ceiling" },
+      "mons": [279, 10064, 1018, 902, 727, 861],
+      "strat": { "es": "Mejora del equipo con el que llegaste a ~Ultra 3-4: añade Mega Swampert y las pantallas de Grimmsnarl en vez de Raichu.", "en": "Upgrade of your ~Ultra 3-4 team: adds Mega Swampert and Grimmsnarl screens instead of Raichu." },
+      "tags": { "es": ["Techo alto", "Presión"], "en": ["High ceiling", "Pressure"] }
+    }
+  ],
+
+  "altTeams": [
+    { "name": { "es": "Singles HO", "en": "Singles HO" }, "fmt": { "es": "Techo alto", "en": "High ceiling" }, "mons": [778, 445, 10034, 983, 908, 10076], "miss": [] },
+    { "name": { "es": "Singles Stall", "en": "Singles Stall" }, "fmt": { "es": "Consistente", "en": "Consistent" }, "mons": [450, 823, 10056, 700, 445, 1000], "miss": [] },
+    { "name": { "es": "Dobles Doble Mega", "en": "Doubles Double Mega" }, "fmt": { "es": "Techo alto", "en": "High ceiling" }, "mons": [10042, 10035, 981, 445, 983, 700], "miss": [] },
+    { "name": { "es": "Dobles Trick Room", "en": "Doubles Trick Room" }, "fmt": { "es": "Contra-meta", "en": "Anti-meta" }, "mons": [981, 1013, 324, 10066, 727, 10041], "miss": ["Sinistcha"] },
+    { "name": { "es": "Dobles HO Tailwind", "en": "Doubles HO Tailwind" }, "fmt": { "es": "Ofensivo", "en": "Offense" }, "mons": [902, 983, 903, 547, 445, 727], "miss": [] }
+  ],
+
+  "buildGroups": {
+    "singles": { "es": "Singles — Balance", "en": "Singles — Balance" },
+    "sun": { "es": "Dobles — Sol", "en": "Doubles — Sun" },
+    "rain": { "es": "Dobles — Lluvia", "en": "Doubles — Rain" },
+    "extra": { "es": "Piezas extra", "en": "Extra pieces" }
+  },
+
+  "builds": [
+    { "group": "singles", "name": "Garchomp", "sprite": 445, "item": "Vidasfera · Life Orb", "ability": "Piel Tosca · Rough Skin", "nature": "Alegre · Jolly", "spread": "Atk 32 / Vel 32 / PS 2", "moves": ["Terremoto · Earthquake", "Garra Dragón · Dragon Claw", "Roca Afilada · Stone Edge", "Danza Espada · Swords Dance"], "note": { "es": "En Singles, Danza Espada lo hace romper equipos. En Dobles cambia Danza por Protección.", "en": "In Singles, Swords Dance lets it break teams. In Doubles swap Dance for Protect." } },
+    { "group": "singles", "name": "Metagross", "sprite": 10076, "item": "Metagrossita · Metagrossite", "ability": "Cuerpo Puro→Zarpas Duras · Clear Body→Tough Claws", "nature": "Alegre · Jolly", "spread": "Atk 32 / Vel 32 / PS 2", "moves": ["Puño Meteoro · Meteor Mash", "Colmillo Psíquico · Psychic Fangs", "Puño Bala · Bullet Punch", "Puño Hielo · Ice Punch"], "note": { "es": "Cuerpo Puro ignora Intimidación. Puño Bala es prioridad que revienta Hadas.", "en": "Clear Body ignores Intimidate. Bullet Punch is priority that smashes Fairies." } },
+    { "group": "singles", "name": "Meowscarada", "sprite": 908, "item": "Pañuelo Elección · Choice Scarf", "ability": "Mutatipo · Protean", "nature": "Alegre · Jolly", "spread": "Atk 32 / Vel 32 / PS 2", "moves": ["Truco Floral · Flower Trick", "Desarme · Knock Off", "Ida y Vuelta · U-turn", "Triple Axel · Triple Axel"], "note": { "es": "Truco Floral siempre es crítico. Con Pañuelo es tu revienta-rápidos.", "en": "Flower Trick is always a crit. With Scarf it's your fast-check." } },
+    { "group": "singles", "name": "Hippowdon", "sprite": 450, "item": "Restos · Leftovers", "ability": "Chorro Arena · Sand Stream", "nature": "Agitada · Impish", "spread": "PS 32 / Def 32 / Vel 2", "moves": ["Terremoto · Earthquake", "Relajo · Slack Off", "Trampa Rocas · Stealth Rock", "Bostezo · Yawn"], "note": { "es": "Muro físico que pone rocas y forza cambios con Bostezo.", "en": "Physical wall that sets rocks and forces switches with Yawn." } },
+    { "group": "singles", "name": "Corviknight", "sprite": 823, "item": "Restos · Leftovers", "ability": "Coraza Reflejo · Mirror Armor", "nature": "Agitada · Impish", "spread": "PS 32 / Def 32 / Vel 2", "moves": ["Pájaro Osado · Brave Bird", "Ida y Vuelta · U-turn", "Respiro · Roost", "Despejar · Defog"], "note": { "es": "Coraza Reflejo devuelve las bajadas de stats. Pivote defensivo clave.", "en": "Mirror Armor bounces stat drops. Key defensive pivot." } },
+    { "group": "singles", "name": "Rotom-Wash", "sprite": 10056, "item": "Restos · Leftovers", "ability": "Levitación · Levitate", "nature": "Modesta · Modest", "spread": "PS 32 / AtEsp 32 / Def 2", "moves": ["Hidrobomba · Hydro Pump", "Voltiocambio · Volt Switch", "Fuego Fatuo · Will-O-Wisp", "Protección · Protect"], "note": { "es": "Inmune a Tierra por Levitación. Quema físicos y pivotea.", "en": "Ground-immune via Levitate. Burns physical attackers and pivots." } },
+
+    { "group": "sun", "name": "Charizard", "form": "Mega Y", "sprite": 10035, "item": "Charizardita Y · Charizardite Y", "ability": "Sequía · Drought", "nature": "Miedosa · Timid", "spread": "AtEsp 32 / Vel 32 / PS 2", "moves": ["Onda Ígnea · Heat Wave", "Rayo Solar · Solar Beam", "Tajo Aéreo · Air Slash", "Protección · Protect"], "note": { "es": "Pone el sol y pega en área con Onda Ígnea. Rayo Solar instantáneo bajo sol.", "en": "Sets sun and hits spread with Heat Wave. Solar Beam is instant under sun." } },
+    { "group": "sun", "name": "Venusaur", "form": "Mega", "sprite": 10033, "item": "Banda Focus · Focus Sash", "ability": "Clorofila · Chlorophyll", "nature": "Modesta · Modest", "spread": "AtEsp 32 / Vel 32 / PS 2", "moves": ["Somnífero · Sleep Powder", "Bomba Lodo · Sludge Bomb", "Energibola · Energy Ball", "Protección · Protect"], "note": { "es": "Bajo sol dobla velocidad con Clorofila. Somnífero desactiva amenazas.", "en": "Doubles Speed under sun via Chlorophyll. Sleep Powder disables threats." } },
+    { "group": "sun", "name": "Incineroar", "sprite": 727, "item": "Baya Zidra · Sitrus Berry", "ability": "Intimidación · Intimidate", "nature": "Cauta · Careful", "spread": "PS 32 / DefEsp 32 / Def 2", "moves": ["Sorpresa · Fake Out", "Última Palabra · Parting Shot", "Envite Ígneo · Flare Blitz", "Fuego Fatuo · Will-O-Wisp"], "note": { "es": "Intimidación + Última Palabra controlan el ritmo. El mejor soporte del formato.", "en": "Intimidate + Parting Shot control tempo. Best support in the format." } },
+    { "group": "sun", "name": "Garchomp", "sprite": 445, "item": "Vidasfera · Life Orb", "ability": "Piel Tosca · Rough Skin", "nature": "Alegre · Jolly", "spread": "Atk 32 / Vel 32 / PS 2", "moves": ["Terremoto · Earthquake", "Avalancha · Rock Slide", "Garra Dragón · Dragon Claw", "Protección · Protect"], "note": { "es": "En Dobles usa Avalancha y Protección. Terremoto pega a los dos rivales.", "en": "In Doubles uses Rock Slide and Protect. Earthquake hits both opponents." } },
+    { "group": "sun", "name": "Sylveon", "sprite": 700, "item": "Pluma Hada · Fairy Feather", "ability": "Piel Feérica · Pixilate", "nature": "Modesta · Modest", "spread": "PS 32 / AtEsp 32 / DefEsp 2", "moves": ["Vozarrón · Hyper Voice", "Fuerza Lunar · Moonblast", "Ataque Rápido · Quick Attack", "Protección · Protect"], "note": { "es": "Vozarrón pega en área con bonus Hada por Piel Feérica. Da techo especial.", "en": "Hyper Voice hits spread with Fairy boost via Pixilate. Special ceiling." } },
+
+    { "group": "rain", "name": "Pelipper", "sprite": 279, "item": "Piedra Lluvia · Damp Rock", "ability": "Llovizna · Drizzle", "nature": "Modesta · Modest", "spread": "PS 32 / AtEsp 32 / Def 2", "moves": ["Vendaval · Hurricane", "Bola Clima · Weather Ball", "Viento Afín · Tailwind", "Protección · Protect"], "note": { "es": "Pone lluvia 8 turnos con Piedra Lluvia. Viento Afín da control de velocidad.", "en": "Sets 8-turn rain with Damp Rock. Tailwind gives speed control." } },
+    { "group": "rain", "name": "Swampert", "form": "Mega", "sprite": 10064, "item": "Swampertita · Swampertite", "ability": "Nado Rápido · Swift Swim", "nature": "Firme · Adamant", "spread": "Atk 32 / Vel 32 / PS 2", "moves": ["Hidroariete · Wave Crash", "Terremoto · Earthquake", "Puño Hielo · Ice Punch", "Protección · Protect"], "note": { "es": "Bajo lluvia dobla velocidad con Nado Rápido. Pega durísimo con Hidroariete.", "en": "Doubles Speed under rain via Swift Swim. Hits hard with Wave Crash." } },
+    { "group": "rain", "name": "Archaludon", "sprite": 1018, "item": "Restos · Leftovers", "ability": "Aguante · Stamina", "nature": "Modesta · Modest", "spread": "PS 32 / AtEsp 32 / Def 2", "moves": ["Electro Shot · Electro Shot", "Foco Resplandor · Flash Cannon", "Pulso Dragón · Dragon Pulse", "Protección · Protect"], "note": { "es": "Electro Shot es instantáneo bajo lluvia. Aguante lo hace un muro que sube Def.", "en": "Electro Shot is instant under rain. Stamina makes it a Def-boosting wall." } },
+    { "group": "rain", "name": "Basculegion", "sprite": 902, "item": "Agua Mística · Mystic Water", "ability": "Nado Rápido · Swift Swim", "nature": "Firme · Adamant", "spread": "Atk 32 / Vel 32 / PS 2", "moves": ["Hidroariete · Wave Crash", "Last Respects · Last Respects", "Acua Jet · Aqua Jet", "Ida y Vuelta · Flip Turn"], "note": { "es": "Last Respects escala con caídas del equipo. Acua Jet da prioridad bajo lluvia.", "en": "Last Respects scales with team faints. Aqua Jet gives priority under rain." } },
+    { "group": "rain", "name": "Grimmsnarl", "sprite": 861, "item": "Refleluz · Light Clay", "ability": "Bromista · Prankster", "nature": "Agitada · Impish", "spread": "PS 32 / Def 32 / DefEsp 2", "moves": ["Reflejo · Reflect", "Pantalla de Luz · Light Screen", "Corazón Roto · Spirit Break", "Última Palabra · Parting Shot"], "note": { "es": "Pantallas con prioridad por Bromista. Refleluz las alarga a 8 turnos.", "en": "Priority screens via Prankster. Light Clay extends them to 8 turns." } },
+
+    { "group": "extra", "name": "Kingambit", "sprite": 983, "item": "Banda Focus · Focus Sash", "ability": "Competitivo / General Supremo · Competitive / Supreme Overlord", "nature": "Firme · Adamant", "spread": "Atk 32 / PS 32 / Def 2", "moves": ["Golpe Bajo · Sucker Punch", "Reverencia · Kowtow Cleave", "Cabeza de Hierro · Iron Head", "Danza Espada · Swords Dance"], "note": { "es": "En Dobles usa General Supremo (sube con aliados caídos). Golpe Bajo es prioridad.", "en": "In Doubles uses Supreme Overlord (boosts as allies faint). Sucker Punch is priority." } },
+    { "group": "extra", "name": "Mimikyu", "sprite": 778, "item": "Vidasfera · Life Orb", "ability": "Disfraz · Disguise", "nature": "Alegre · Jolly", "spread": "Atk 32 / Vel 32 / PS 2", "moves": ["Danza Espada · Swords Dance", "Carantoña · Play Rough", "Sombra Vil · Shadow Sneak", "Puño Drenaje · Drain Punch"], "note": { "es": "Disfraz garantiza un turno de setup. Sombra Vil remata con prioridad.", "en": "Disguise guarantees a setup turn. Shadow Sneak finishes with priority." } },
+    { "group": "extra", "name": "Aerodactyl", "form": "Mega", "sprite": 10042, "item": "Aerodactylita · Aerodactylite", "ability": "Fuerza Bruta · Tough Claws", "nature": "Alegre · Jolly", "spread": "Atk 32 / Vel 32 / PS 2", "moves": ["Avalancha · Rock Slide", "Viento Afín · Tailwind", "Ala Bis · Dual Wingbeat", "Protección · Protect"], "note": { "es": "Uno de los más rápidos del formato. Pone Viento Afín y pega en área con Avalancha.", "en": "One of the fastest in the format. Sets Tailwind and spreads with Rock Slide." } },
+    { "group": "extra", "name": "Sableye", "form": "Mega", "sprite": 10066, "item": "Refleluz · Light Clay", "ability": "Bromista→Espejo Mágico · Prankster→Magic Bounce", "nature": "Osada · Bold", "spread": "PS 32 / Def 32 / DefEsp 2", "moves": ["Fuego Fatuo · Will-O-Wisp", "Reflejo · Reflect", "Otra Vez · Encore", "Juego Sucio · Foul Play"], "note": { "es": "Antes de Megaevolucionar pone pantallas con prioridad; ya Mega, rebota estados.", "en": "Before mega it sets priority screens; once mega, it bounces status." } }
+  ],
+
+  "system": {
+    "ranking": {
+      "tiers": ["Beginner", "Poké Ball", "Great Ball", "Ultra Ball", "Master Ball", "Champion"],
+      "facts": [
+        { "es": "Cada temporada (~35 días) reinicia: todos empiezan en Poké Ball R4. Sin placement.", "en": "Each season (~35 days) resets: everyone starts at Poké Ball R4. No placement." },
+        { "es": "Barra: victoria +1/4, derrota −1/4 → 4 victorias netas por subrango.", "en": "Gauge: win +1/4, loss −1/4 → 4 net wins per subrank." },
+        { "es": "TRUCO: con racha de 3+ victorias, cada victoria llena +2/4 (el doble) → 2 victorias limpian el subrango.", "en": "TRICK: on a 3+ win streak each win fills +2/4 (double) → 2 wins clear the subrank." },
+        { "es": "Una vez promovido a un tier, no bajas de tier (sí de subrango dentro del tier).", "en": "Once promoted to a tier, you don't drop tiers (you can drop subranks within it)." },
+        { "es": "Máster R1-3 + Champion se desbloquean una semana tras el inicio de temporada.", "en": "Master R1-3 + Champion unlock one week after season start." },
+        { "es": "Singles y Dobles rankean por separado con recompensas separadas: jugar ambos maximiza VP.", "en": "Singles and Doubles rank separately with separate rewards: playing both maximizes VP." }
+      ]
+    },
+    "box": [
+      { "es": "Caja base: 30, crece con el rango (+5 por tier, +10 en Máster).", "en": "Base box: 30, grows with rank (+5 per tier, +10 at Master)." },
+      { "es": "Starter Pack: +50 caja permanentes, 30 Tickets de Compañero, 50 de Entrenamiento.", "en": "Starter Pack: +50 permanent box, 30 Teammate Tickets, 50 Training Tickets." }
+    ],
+    "costs": [
+      { "v": "2500 VP", "l": { "es": "Reclutar permanente", "en": "Recruit permanent" } },
+      { "v": "2000 VP", "l": { "es": "Mega Piedra", "en": "Mega Stone" } },
+      { "v": "500 VP", "l": { "es": "Cambiar habilidad / naturaleza", "en": "Change ability / nature" } },
+      { "v": "250 VP", "l": { "es": "Cambiar un movimiento", "en": "Change a move" } },
+      { "v": "5 VP", "l": { "es": "Por Punto de Característica (66 máx, 32/stat)", "en": "Per Trait Point (66 max, 32/stat)" } },
+      { "v": "0 VP", "l": { "es": "Tickets de Entrenamiento reducen costos a 0", "en": "Training Tickets cut costs to 0" } }
+    ],
+    "customization": {
+      "es": "No hay EVs/IVs: todo a nivel 50 con IVs perfectos. Los EVs se reemplazan por Puntos de Característica (66 totales, máx 32 por stat). Códigos de Equipo Réplica (Team ID) permiten guardar/compartir equipos gratis.",
+      "en": "No EVs/IVs: everything at level 50 with perfect IVs. EVs are replaced by Trait Points (66 total, max 32 per stat). Replica Team codes (Team ID) let you save/share teams for free."
+    },
+    "obtain": [
+      { "title": { "es": "Roster Ranch", "en": "Roster Ranch" }, "steps": [
+        { "es": "Alineación de 10 Pokémon aleatorios cada 22 h (gratis) de un pool de ~319. Eliges solo 1.", "en": "10 random Pokémon every 22h (free) from a ~319 pool. You pick only 1." },
+        { "es": "Prueba (Trial): gratis, 7 días, no se puede entrenar. Permanente: 2500 VP o 1 Ticket de Compañero.", "en": "Trial: free, 7 days, can't be trained. Permanent: 2500 VP or 1 Teammate Ticket." },
+        { "es": "Tickets de Afinidad suben la probabilidad de un tipo concreto antes de sacar alineación.", "en": "Affinity Tickets raise the odds of a specific type before drawing." }
+      ] },
+      { "title": { "es": "Pokémon HOME", "en": "Pokémon HOME" }, "steps": [
+        { "es": "Transfiere el Pokémon exacto que quieras (solo evoluciones finales presentes en el juego).", "en": "Transfer the exact Pokémon you want (only final evolutions present in the game)." },
+        { "es": "El enlace se activa desde dentro de HOME, no desde Champions. Los de HOME sí se pueden entrenar.", "en": "Link is activated from within HOME, not Champions. HOME mons can be trained." }
+      ] }
+    ]
+  },
+
+  "shopping": {
+    "megaStones": ["Charizardita Y", "Metagrossita", "Swampertita", "Aerodactylita"],
+    "items": ["Banda Focus", "Pañuelo Elección", "Vidasfera", "Baya Zidra", "Pluma Hada", "Refleluz (Light Clay)", "Piedra Lluvia (Damp Rock)", "Agua Mística", "Restos", "Lupa (Wide Lens)"]
+  },
+
+  "scout": {
+    "intro": {
+      "es": "Piezas de alto potencial por conseguir o reevaluar según el meta M-4 (verificado con ChampDex, PokéChamp DB y fuentes JP/中文).",
+      "en": "High-potential pieces to obtain or reassess for the M-4 meta (verified with ChampDex, PokéChamp DB and JP/中文 sources)."
+    },
+    "targets": [
+      { "name": "Sinistcha", "sprite": 1013, "priority": "alta", "have": false, "why": { "es": "Nº1 de soporte en Dobles (Trick Room + Danza Amiga + curación). #2 de uso global. Es la pieza que más te falta.", "en": "#1 support in Doubles (Trick Room + Life Dew + healing). #2 global usage. Your biggest gap." } },
+      { "name": "Mawile (Mega)", "sprite": 10052, "priority": "alta", "have": true, "why": { "es": "Ya la tienes en situacional: súbela a núcleo. Forma el núcleo seguro del meta con Gholdengo.", "en": "You already have it as situational: promote it. Forms the meta's safe core with Gholdengo." } },
+      { "name": "Staraptor (Mega)", "sprite": 398, "priority": "media", "have": true, "why": { "es": "Mega nueva con Buscabroncas (Contrary): A Bocajarro y Pájaro Osado sin bajadas. Pico ofensivo emergente.", "en": "New mega with Contrary: Close Combat and Brave Bird without drops. Emerging offensive threat." } },
+      { "name": "Hydreigon", "sprite": 635, "priority": "media", "have": false, "why": { "es": "Del top 40 que aún no tienes. Buen pivote especial Siniestro/Dragón.", "en": "Top-40 piece you don't own yet. Strong Dark/Dragon special pivot." } },
+      { "name": "Scovillain", "sprite": 952, "priority": "baja", "have": false, "why": { "es": "Con Mega nueva (Rocío Picante). Opción de sol/ofensiva a vigilar.", "en": "Has a new Mega. A sun/offense option to watch." } }
+    ]
+  },
+
+  "plan": [
+    {
+      "title": { "es": "Singles primero", "en": "Singles first" },
+      "steps": {
+        "es": ["Montar el equipo Balance (espacio 1).", "Comprar Metagrossita y maximizar Garchomp/Metagross.", "Jugar rachas de 3+ para el llenado doble en cada empuje de rango."],
+        "en": ["Build the Balance team (slot 1).", "Buy Metagrossite and max Garchomp/Metagross.", "Play 3+ streaks for the double fill on each rank push."]
+      },
+      "threshold": { "es": "Si pasas Ultra, mantén; si te frenan Hadas, mete Kingambit por Rotom-Wash.", "en": "If you pass Ultra, keep it; if Fairies stop you, swap Kingambit for Rotom-Wash." }
+    },
+    {
+      "title": { "es": "Dobles + Sinistcha", "en": "Doubles + Sinistcha" },
+      "steps": {
+        "es": ["Empezar por Sol (el más consistente).", "Conseguir Sinistcha (HOME o Rancho con Ticket de Afinidad).", "Guardar Lluvia como 2º equipo Réplica."],
+        "en": ["Start with Sun (most consistent).", "Get Sinistcha (HOME or Ranch with Affinity Ticket).", "Save Rain as a 2nd Replica team."]
+      },
+      "threshold": { "es": "Contra lluvia/arena, sube Rotom-Wash.", "en": "Vs rain/sand, bring up Rotom-Wash." }
+    },
+    {
+      "title": { "es": "Recursos y variantes", "en": "Resources and variants" },
+      "steps": {
+        "es": ["Usar Equipos Réplica para variantes sin gastar caja.", "Devolver a HOME lo que no uses (reversible).", "Promover Mega Mawile a núcleo y probar Mega Staraptor."],
+        "en": ["Use Replica teams for variants without spending box.", "Return unused mons to HOME (reversible).", "Promote Mega Mawile to core and test Mega Staraptor."]
+      },
+      "threshold": { "es": "Con la caja creciendo por rango, activa un 4º/5º equipo por arquetipo.", "en": "As the box grows with rank, activate a 4th/5th team per archetype." }
+    }
+  ],
+
+  "sources": [
+    { "name": "ChampDex — Live Meta", "url": "https://champdex.com/meta", "lang": "EN" },
+    { "name": "PokéChamp DB — Usage Stats", "url": "https://pokechamdb.com/en", "lang": "EN" },
+    { "name": "Pokémon Zone", "url": "https://www.pokemon-zone.com/champions/", "lang": "EN" },
+    { "name": "op.gg Pokémon Champions", "url": "https://op.gg/pokemon-champions", "lang": "EN/中文" },
+    { "name": "Showdown Tier (Reg M-B)", "url": "https://showdowntier.com/formats/dmb/index.html", "lang": "EN" },
+    { "name": "Game8 (シーズン4/M-B)", "url": "https://game8.jp/pokemon-champions/776525", "lang": "JP" },
+    { "name": "GameWith (M-B)", "url": "https://gamewith.jp/pokemon-champions/564189", "lang": "JP" },
+    { "name": "oslink — Best Teams M-B", "url": "https://www.oslink.io/ja/blog/guide/pokemon-champions-best-teams-for-regulation-m-b.html", "lang": "JP" },
+    { "name": "note.com — Camino a Máster", "url": "https://note.com/chesnaught/n/na126210070ee", "lang": "JP" },
+    { "name": "qbnews.tw — 爬分組隊", "url": "https://www.qbnews.tw/pokemon-champions-best-party-tier-list/", "lang": "中文" },
+    { "name": "Serebii — Reg M-B", "url": "https://www.serebii.net/pokemonchampions/rankedbattle/regulationm-b.shtml", "lang": "EN" }
+  ]
+}

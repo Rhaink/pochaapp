@@ -1,0 +1,141 @@
+/* ============================================================
+   Pocha v4 — Sistema de diseño
+   Estética "consola de entrenador": oscuro por defecto, acentos
+   cian/violeta/oro. Tokens en :root, override en [data-theme].
+   ============================================================ */
+
+:root {
+  /* Paleta base (dark) */
+  --bg: #0a0e1a;
+  --bg-2: #0e1424;
+  --surface: #131a2e;
+  --surface-2: #1a2340;
+  --surface-hi: #212c4f;
+  --line: #26304f;
+  --line-hi: #33406a;
+
+  --text: #eaf0ff;
+  --muted: #9aa7c7;
+  --faint: #6b779c;
+
+  /* Acentos */
+  --cyan: #35e0d8;
+  --violet: #a678ff;
+  --gold: #ffc64b;
+  --green: #46e08a;
+  --red: #ff6b7d;
+  --blue: #4aa8ff;
+
+  --accent: var(--cyan);
+  --accent-soft: color-mix(in srgb, var(--cyan) 16%, transparent);
+
+  /* Tipografía */
+  --font-display: 'Chakra Petch', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-pixel: 'Press Start 2P', monospace;
+
+  /* Radios y sombras */
+  --r-sm: 10px;
+  --r: 14px;
+  --r-lg: 20px;
+  --shadow: 0 8px 30px rgba(0, 0, 0, .35);
+  --shadow-hi: 0 12px 40px rgba(0, 0, 0, .5);
+
+  /* Layout */
+  --nav-h: 64px;
+  --sidebar-w: 240px;
+  --maxw: 1180px;
+
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-t: env(safe-area-inset-top, 0px);
+
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --bg: #f3f5fb;
+  --bg-2: #e9edf7;
+  --surface: #ffffff;
+  --surface-2: #f4f6fc;
+  --surface-hi: #eaeef8;
+  --line: #dde3f0;
+  --line-hi: #c8d1e6;
+
+  --text: #16203a;
+  --muted: #55627f;
+  --faint: #8b97b3;
+
+  --cyan: #10a89f;
+  --violet: #7c4ddb;
+  --gold: #c98a00;
+  --green: #12a35c;
+  --red: #d63a52;
+  --blue: #2b7fe0;
+
+  --accent-soft: color-mix(in srgb, var(--cyan) 12%, transparent);
+  --shadow: 0 8px 24px rgba(30, 45, 90, .10);
+  --shadow-hi: 0 12px 36px rgba(30, 45, 90, .16);
+
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
+}
+
+body {
+  background:
+    radial-gradient(1200px 600px at 80% -10%, color-mix(in srgb, var(--violet) 12%, transparent), transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, color-mix(in srgb, var(--cyan) 10%, transparent), transparent 55%),
+    var(--bg);
+  min-height: 100dvh;
+}
+
+h1, h2, h3, h4 { font-family: var(--font-display); margin: 0; line-height: 1.15; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; }
+img { max-width: 100%; }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: var(--line-hi); border-radius: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+/* --- Utilidades comunes --- */
+.eyebrow {
+  font-family: var(--font-display);
+  font-size: 12px; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--accent); font-weight: 700;
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  box-shadow: var(--shadow);
+}
+.chip-tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 10px; border-radius: 999px;
+  font-size: 12px; font-weight: 600;
+  background: var(--surface-2); border: 1px solid var(--line);
+  color: var(--muted);
+}
+.pixel { font-family: var(--font-pixel); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .bob { animation: bob 3s ease-in-out infinite; }
+}
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+/* Sprite pixelado nítido */
+.sprite { image-rendering: pixelated; }
